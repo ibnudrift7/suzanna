@@ -1,4 +1,4 @@
-<header class="header">
+<!-- <header class="header">
   <div class="d-none d-sm-none d-md-block d-lg-block">
       <div class="prelative container pt-3 pb-2">
           <div class="row">
@@ -102,7 +102,7 @@
     </div>
     <div class="clear"></div>
   </div>
-</section>
+</section> -->
 
 
 <script type="text/javascript">

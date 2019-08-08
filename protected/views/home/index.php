@@ -1,99 +1,108 @@
-<!-- <section class="cover-home">
-	<div class="prelative container">
-		<div class="container2 mx-auto">
-			<div class="row mx-auto">
-				<div class="col-md-60 mx-auto pt-3">
-					<h2 class="text-center">Galery Granit Tile Terbesar dan Pusat Aneka Material Bahan Bangunan, <br>
-					Menyediakan Koleksi Terlengkap di Banjarmasin, Kalsel.</h2>
-				</div>
-				<div class="col-md-60 mx-auto">
-                    <button class="profil mx-auto text-center d-block ">Lihat Produk Kami</button>
-                </div>
-			</div>
-		</div>
-	</div>
-</section> -->
- 
 <section class="home-sec-1">
-	<div class="prelative container">
-		<div class="container2 mx-auto py-4">
-			<div class="row">
-				<div class="content py-4">
-					<?php echo $this->setting['home_section2_content']; ?>
+    <div class="prelative container">
+        <div class="row">
+            <div class="col-md-30">
+                <div class="boxed-descriptions">
+                    <div class="inner">
+                        <h3>Never Stop Caring For The Mother & Baby <br> In Indonesia</h3>
+                        <p>At Suzanna baby shop, we offer range of quality exclusive products to help mothers finding the right and the best mother & baby products as well as and mothers & babies fashion products. We're committed to provide the most safe, innovative and stylish products available.</p>
+                        <button class="our-button"><a href="#">Our Product</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-30">
+                <div class="boxed-images">
+                    <div class="inner-left">
+                        <img class="" src="<?php echo $this->assetBaseurl; ?>Layer-10.png" alt="">
+                    </div>
 				</div>
-			</div>
-		</div>
-	</div>
+            </div>
+            <div class="col-md-30">
+                <div class="boxed-images">
+                    <div class="inner-right">
+                        <img src="<?php echo $this->assetBaseurl; ?>Ellipse-3-copy.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-30">
+                <div class="boxed-descriptions section-kanan-home1">
+                    <div class="inner">
+                        <h3>The Suzanna Story</h3>
+                        <p>Since 1999, our compassionate and comitted founders have advanced our mission: to bring modern smart products and promote exclusive quality products to every mother and baby in Indonesia. We brought impact to the early stages of maternity and life birth of a baby, both physically and emotionally. With over 10 branch of our store in Indonesia, we are a trusted partner to both the families in Indonesia as well as the mother and baby products manufacturer from all over the world. </p>
+                        <button class="our-button"><a href="#">More About Us</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
+    
 <section class="home-sec-2">
-	<div class="prelative container pt-5">
-		<div class="container2 mx-auto">
-			<div class="row pt-5 pb-5 mb-5">
-				<h3 class="pb-4"><?php echo $this->setting['home_section3_title'] ?></h3>
-				<?php
-
-				$criteria = new CDbCriteria;
-				$criteria->with = array('description');
-				$criteria->addCondition('t.type = :type');
-				$criteria->params[':type'] = 'category';
-				$criteria->addCondition('description.language_id = :language_id');
-				$criteria->params[':language_id'] = $this->languageID;
-				$criteria->order = 'sort ASC';
-
-				$ParentsCategory = PrdCategory::model()->findAll($criteria);
-				?>
-				<?php foreach ($ParentsCategory as $key => $value): ?>
-				<div class="col-md-20 pt-4">
-					<div class="box-product">
-						<a href="<?php echo CHtml::normalizeUrl(array('/product/index', 'category'=> $value->id)); ?>">
-							<img class="w-100 d-block img img-fluid" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(352,173, '/images/category/'. $value->image, array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="<?php echo $value->description->name; ?>">
-						</a>
-						<div class="content py-4 pl-4 pr-4">
-							<h1><?php echo ucwords(strtolower( $value->description->name )); ?></h1>
-							<p class="isi"><?php echo $value->description->desc; ?></p>
-							<div class="lihat-produk pt-3">
-								<a href="<?php echo CHtml::normalizeUrl(array('/product/index', 'category'=> $value->id)); ?>">
-									<p>Lihat Produk<span><img class="arrow" src="<?php echo $this->assetBaseurl; ?>arrow.png" alt=""></span></p>
-								</a>
-							</div>
-						</div>
-					</div>					
-				</div>	
-				<?php endforeach ?>
-
-			</div>
-		</div>
-	</div>
+    <div class="prelative container">
+        <div class="row">
+            <div class="col-md-15">
+                <div class="boxed">
+                    <div class="inner1">
+                        <h4>10+</h4>
+                        <p>Stores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-15">
+                <div class="boxed">
+                    <div class="inner2">
+                        <h4>250+</h4>
+                        <p>Human Resources</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-15">
+                <div class="boxed">
+                    <div class="inner3">
+                        <h4>750+</h4>
+                        <p>Brands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-15">
+                <div class="boxed">
+                    <div class="inner4">
+                        <h4>35,000+</h4>
+                        <p>Product SKUs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="home-sec-3 pb-5">
-	<div class="prelative container">
-		<div class="container2 mx-auto pt-5">
-			<div class="row pt-3">
-				<div class="content">
-					<h3><?php echo $this->setting['home_section4_title'] ?></h3>
-					<?php 
-					$criteria = new CDbCriteria;
-					$criteria->with = array('description');
-					$criteria->addCondition('active = "1"');
-					$criteria->addCondition('description.language_id = :language_id');
-					$criteria->params[':language_id'] = $this->languageID;
-					// $criteria->order = 'date_input DESC';
-					$modelArsim = Brand::model()->findAll($criteria);
-					?>
-					<div class="py-3 mb-1"></div>
-					<div class="row">
-						<?php foreach ($modelArsim as $key => $value): ?>
-						<div class="col-md-15 col-30">
-							<img src="<?php echo Yii::app()->baseUrl; ?>/images/brand/<?php echo $value->image ?>" alt="">
-						</div>
-						<?php endforeach ?>
-					</div>
-
+<section class="home-sec-3">
+    <div class="prelative container">
+        <div class="row no-gutters">
+            <div class="col-md-60">
+                <h3>Our Exclusive Brands</h3>
+            </div>
+            <div class="col-md-15">
+                <div class="image">
+					<img class="w-100" src="<?php echo $this->assetBaseurl; ?>brevi.png" alt="">
 				</div>
-			</div>
-		</div>
-	</div>
+            </div>
+            <div class="col-md-15">
+                <div class="image">
+					<img class="w-100" src="<?php echo $this->assetBaseurl; ?>royal.png" alt="">
+				</div>
+            </div>
+            <div class="col-md-15">
+                <div class="image">
+					<img class="w-100" src="<?php echo $this->assetBaseurl; ?>cam.png" alt="">
+				</div>
+            </div>
+            <div class="col-md-15">
+                <div class="image kanan">
+					<img class="w-100" src="<?php echo $this->assetBaseurl; ?>gee.png" alt="">
+				</div>
+            </div>
+        </div>
+    </div>
 </section>
 

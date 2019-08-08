@@ -10,8 +10,8 @@
             <div class="carousel-inner">
                 <div class="carousel-item <?php if($key == 0): ?>active<?php endif ?> home-slider-new">
                     
-                    <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl; ?>DESIGN.jpg" alt="First slide">
-                    <!-- <img class="w-100 d-block d-sm-none" src="<?php // echo Yii::app()->baseUrl.ImageHelper::thumb(600,980, '/images/'. $value->image2 , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt=""> -->
+                    <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl; ?>slider_03.jpg" alt="First slide">
+                    <img class="w-100 d-block d-sm-none" src="<?php // echo Yii::app()->baseUrl.ImageHelper::thumb(600,980, '/images/'. $value->image2 , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
