@@ -1,3 +1,20 @@
+<section class="cover-inside">
+  <div class="prelative container">
+    <div class="row">
+      <div class="col-md-60">
+        <div class="content">
+          <div class="title">
+            <p>About Us</p>
+          </div>
+          <div class="subtitle">
+            <p>Our Background</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="about-background-sec-1">
         <div class="prelative container">
             <div class="row">
@@ -22,10 +39,13 @@
     </section>
     
     <section class="about-background-sec-2">
-        <prelative class="container">
+        <div class="prelative container">
             <div class="row">
                 <div class="col-md-30">
-                    <div class="img"></div>
+                    <div class="img">
+                    <img src="<?php echo $this->assetBaseurl; ?>about.png" alt="">
+
+                    </div>
                 </div>
                 <div class="col-md-30">
                     <h3>Corporate Growth
@@ -37,7 +57,7 @@
                     <p>Suzanna Baby Shops sell both domestic and international products, prioritizing on the good quality, product safety and competitive pricing. We sell not only goods, but we sell products with good service accompanied with courtesy, warmth and product knowledge. At last, we always strive to be the best in the retail store industry for babies and kids, encompassing primarily on the products variety, price and convenience in customers’ shopping.</p>
                 </div>
             </div>
-        </prelative>
+        </div>
     </section>
 
     

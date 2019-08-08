@@ -1,21 +1,42 @@
-<section class="about-visimisi-sec-1">
+<section class="cover-inside">
     <div class="prelative container">
-        <div class="prelative container2">
         <div class="row">
             <div class="col-md-60">
-                <div class="boxed-tittle-visimisi">
-                    <div class="inner">
-                        <h3>It has been our culture of caring and loving that motivates all our actions, but our corporate focus is guided by its Vision and Mission which direct the business operational that we perform every day on behalf of our country and its residents.
-                        </h3>
+                <div class="content">
+                    <div class="title">
+                        <p>About Us</p>
+                    </div>
+                    <div class="subtitle">
+                        <p>Vission & Mission</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="about-visimisi-sec-1">
+    <div class="prelative container">
+        <div class="prelative container2">
+            <div class="row">
+                <div class="col-md-60">
+                    <div class="boxed-tittle-visimisi">
+                        <div class="inner">
+                            <h3>It has been our culture of caring and loving that motivates all our actions, but our corporate focus is guided by its Vision and Mission which direct the business operational that we perform every day on behalf of our country and its residents.
+                        </h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-30">
                     <div class="row">
-                    <h3>Vision</h3>
-                    <div class="divide"></div>
+                        <div class="col-md-20">
+                            <h3>Vision</h3>
+                        </div>
+                        <div class="col-md-40">
+                            <div class="divide"></div>
+                        </div>
                     </div>
-                    
                 </div>
                 <div class="col-md-30">
                     <ul>
@@ -25,27 +46,31 @@
                     </ul>
                 </div>
                 <div class="col-md-30">
-                <div class="row">
-                    <h3>Mission</h3>
-                    <div class="divide"></div>
+                    <div class="row">
+                        <div class="col-md-20">
+                            <h3>Mission</h3>
+                        </div>
+                        <div class="col-md-40">
+                            <div class="divide"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-30">
-                    <ul>
+                <ul>
                         <li>Creating a clean, pleasantly tidy and cozy shopping environment for the customers</li>
                         <li>Trying the best to make customers coming back to our stores because of overall store’s quality that makes us different</li>
                         <li>Ensurinng updated availabilities, especially the latest trends on fashion and toys</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-        <div class="col-md-60">
-                <div class="img">
-                    <img src="<?php echo $this->assetBaseurl; ?>vission.png" alt="">
+</div>
+
+            <div class="row">
+                <div class="col-md-60">
+                    <div class="img">
+                        <img class="w-100"src="<?php echo $this->assetBaseurl; ?>vission.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
