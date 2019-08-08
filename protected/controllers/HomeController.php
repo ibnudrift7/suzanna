@@ -514,7 +514,28 @@ class HomeController extends Controller
 		$this->pageTitle = 'About Us - '.$this->pageTitle;
 		$this->layout='//layouts/column2';
 
-		$this->render('about', array(	
+		$this->render('about-background', array(	
+		));
+	}
+	public function actionVisimisi()
+	{
+		$this->pageTitle = 'Visi & Misi - '.$this->pageTitle;
+		$this->layout='//layouts/column2';
+		$this->render('about-visimisi', array(	
+		));
+	}
+	public function actionProduct_exclusive()
+	{
+		$this->pageTitle = 'Product Exlusive - '.$this->pageTitle;
+		$this->layout='//layouts/column2';
+		$this->render('product-exclusive', array(	
+		));
+	}
+	public function actionProduct_support()
+	{
+		$this->pageTitle = 'Product Support - '.$this->pageTitle;
+		$this->layout='//layouts/column2';
+		$this->render('product-support', array(	
 		));
 	}
 
