@@ -9,6 +9,7 @@
     </div>
   </div>
 </section>
+
 <section class="default_sc insides_middleDefaultpages back-white">
   <div class="prelatife container">
     <div class="clear height-50"></div><div class="height-5"></div>
