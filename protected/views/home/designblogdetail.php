@@ -25,6 +25,7 @@
                     <li><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">LIFESTYLE EVENTS</a></li>
                 </ul>
             </div>
+
             <div class="col-sm-10">
                 <div class="content-header-product">
                     <div class="height-10"></div>
