@@ -13,7 +13,7 @@
     <div class="container-blog-list">
         <div class="row">
             <div class="col-sm-2 containersub-blog-list">
-                <div class="height-15"></div>
+                <div class="height-15"></div>`
                 <h3 class="product-list-title">LIFESTYLE BLOG</h3>
                 <div class="height-10"></div>
                 <div class="line-grey"></div>
