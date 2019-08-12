@@ -19,13 +19,13 @@
 					  <div class="box-model">
 						  <div class="row no-gutters">
 							  <div class="col-md-30">
-								  <div class="kanan">
-									  <p><a href="#">Exclusive Brands</a> </p>
+								  <div class="<?php if ($active_menu_pg != 'home/visimisi'): ?>active<?php endif ?>">
+									  <p><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Our Background</a> </p>
 								  </div>
 							  </div>
 							  <div class="col-md-30">
-								  <div class="kiri">
-									  <p><a href="#">Supporting Brands</a></p>
+								  <div class="<?php if ($active_menu_pg == 'home/visimisi'): ?>active<?php endif ?>">
+									  <p><a href="<?php echo CHtml::normalizeUrl(array('/home/visimisi')); ?>">Vision & Mission</a></p>
 								  </div>
 							  </div>
 						  </div>
@@ -84,5 +84,4 @@
 
     
 <section class="about-background-sec-3">
-
 </section>

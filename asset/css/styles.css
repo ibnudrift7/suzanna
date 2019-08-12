@@ -485,34 +485,25 @@ section.cover-inside .prelative.container .box-model {
   margin: 0 auto;
   width: 605px;
   height: 65px;
+  background: #d3aaac;
+  box-shadow: 7px 9px 14px -8px rgba(0, 0, 0, 0.75);
+}
+section.cover-inside .prelative.container .box-model p {
+  margin: 0 auto;
+  padding-top: 18px;
+  text-align: center;
+}
+section.cover-inside .prelative.container .box-model p a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
 }
 section.cover-inside .prelative.container .box-model .kanan {
-  background: #d3aaac;
   height: 65px;
 }
-section.cover-inside .prelative.container .box-model .kanan p {
-  margin: 0 auto;
-  padding-top: 18px;
-  text-align: center;
-}
-section.cover-inside .prelative.container .box-model .kanan p a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-}
-section.cover-inside .prelative.container .box-model .kiri {
+section.cover-inside .prelative.container .box-model .active {
   height: 65px;
   background: #c52028;
-}
-section.cover-inside .prelative.container .box-model .kiri p {
-  margin: 0 auto;
-  padding-top: 18px;
-  text-align: center;
-}
-section.cover-inside .prelative.container .box-model .kiri p a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
 }
 .blocks_bottomnavcover {
   position: absolute;
@@ -563,10 +554,12 @@ section.cover-inside .prelative.container .box-model .kiri p a {
   color: #c52026;
   padding: 10px 20px;
   float: left;
+  cursor: pointer;
 }
 section.about-visimisi-sec-1 {
   font-family: 'Fira Sans', sans-serif;
   background-color: #f5f2ec;
+  z-index: 100;
 }
 section.about-visimisi-sec-1 .boxed-tittle-visimisi {
   margin-top: 140px;
@@ -605,12 +598,19 @@ section.about-visimisi-sec-1 li {
 section.about-visimisi-sec-1 .img {
   margin-top: 100px;
 }
+section.about-visimisi-sec-1 .img img {
+  z-index: 100;
+  position: relative;
+}
 section.about-visimisi-sec-2 {
   background-color: #f5f2ec;
   background-image: url('../images/about-background_03.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
   min-height: 1265px;
+  margin-top: -300px;
+  z-index: 50;
+  position: relative;
 }
 section.about-background-sec-1 {
   min-height: 720px;
@@ -645,6 +645,7 @@ section.about-background-sec-2 {
   background-color: #f5f2ec;
   background-position: center bottom;
   background-repeat: no-repeat;
+  position: relative;
 }
 section.about-background-sec-2 .up {
   z-index: 150;
@@ -669,8 +670,9 @@ section.about-background-sec-3 {
   background-position: center bottom;
   background-repeat: no-repeat;
   min-height: 1265px;
-  margin-top: -200px;
+  margin-top: -400px;
   position: relative;
+  z-index: 50;
 }
 section.product-exclusive-sec-1 {
   font-family: 'Fira Sans', sans-serif;
@@ -717,7 +719,7 @@ section.product-exclusive-sec-2 {
   background-position: center bottom;
   background-repeat: no-repeat;
   min-height: 1265px;
-  margin-top: -200px;
+  margin-top: -300px;
   position: relative;
   z-index: 100;
 }

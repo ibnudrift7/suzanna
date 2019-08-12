@@ -19,13 +19,13 @@
 						<div class="box-model">
 							<div class="row no-gutters">
 								<div class="col-md-30">
-									<div class="kanan">
-										<p><a href="#">Exclusive Brands</a> </p>
+									<div class="<?php if ($active_menu_pg == 'home/product_support'): ?>active<?php endif ?>">
+										<p><a href="<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>">Exclusive Brands</a> </p>
 									</div>
 								</div>
 								<div class="col-md-30">
-									<div class="kiri">
-										<p><a href="#">Supporting Brands</a></p>
+									<div class="<?php if ($active_menu_pg != 'home/product_support'): ?>active<?php endif ?>">
+										<p><a href="<?php echo CHtml::normalizeUrl(array('/home/product_support')); ?>">Supporting Brands</a></p>
 									</div>
 								</div>
 							</div>

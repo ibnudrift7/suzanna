@@ -6,7 +6,7 @@
                     <div class="inner">
                         <h3>Never Stop Caring For The Mother & Baby <br> In Indonesia</h3>
                         <p>At Suzanna baby shop, we offer range of quality exclusive products to help mothers finding the right and the best mother & baby products as well as and mothers & babies fashion products. We're committed to provide the most safe, innovative and stylish products available.</p>
-                        <button class="our-button"><a href="#">Our Product</a></button>
+                        <button class="our-button"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>">Our Product</a></button>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                     <div class="inner">
                         <h3>The Suzanna Story</h3>
                         <p>Since 1999, our compassionate and comitted founders have advanced our mission: to bring modern smart products and promote exclusive quality products to every mother and baby in Indonesia. We brought impact to the early stages of maternity and life birth of a baby, both physically and emotionally. With over 10 branch of our store in Indonesia, we are a trusted partner to both the families in Indonesia as well as the mother and baby products manufacturer from all over the world. </p>
-                        <button class="our-button"><a href="#">More About Us</a></button>
+                        <button class="our-button"><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">More About Us</a></button>
                     </div>
                 </div>
             </div>

@@ -27,7 +27,7 @@
 										<p>The RoyalBaby bicycle products features a series of unique design bikes with the advantage of very light frames. The RoyalBaby products uses magnesium which also makes it extremely comfortable and stable.</p>
                                     </div>
                                     <div class="col-md-60 mx-auto pt-3">
-                                        <button onclick="javascript: window.location.href='<?php echo CHtml::normalizeUrl(array('/home/produk')); ?>';" class="profil mx-auto text-center d-block">Read More</button>
+                                        <button onclick="javascript: window.location.href='<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>';" class="profil mx-auto text-center d-block">Read More</button>
                                     </div>
                                 </div>
                             </div>

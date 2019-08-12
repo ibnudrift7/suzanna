@@ -459,33 +459,24 @@ section.cover-inside {
 			margin: 0 auto;
 			width: 605px;
 			height: 65px;
-			.kanan{
-				background: #d3aaac;
-				height: 65px;
-				p{
-					margin: 0 auto;
-					padding-top: 18px;
-					text-align: center;
-					a{
-						text-decoration: none;
-						color: #ffffff;
-						font-size: 20px;
-					}
+			background: #d3aaac;
+			box-shadow: 7px 9px 14px -8px rgba(0, 0, 0, 0.75);
+			p{
+				margin: 0 auto;
+				padding-top: 18px;
+				text-align: center;
+				a{
+					text-decoration: none;
+					color: #ffffff;
+					font-size: 20px;
 				}
 			}
-			.kiri{
+			.kanan{
+				height: 65px;
+			}
+			.active{
 				height: 65px;
 				background: #c52028;
-				p{
-					margin: 0 auto;
-					padding-top: 18px;
-					text-align: center;
-					a{
-						text-decoration: none;
-						color: #ffffff;
-						font-size: 20px;
-					}
-				}
 			}
 		}
 	}
@@ -545,6 +536,7 @@ section.cover-inside {
 						color: #c52026;
 						padding: 10px 20px;
 						float: left;
+						cursor: pointer;
 					}
 				}
 
@@ -555,6 +547,214 @@ section.cover-inside {
 }
 
 
+section.about-visimisi-sec-1 {
+	font-family: @fira;
+	background-color: #f5f2ec;
+	z-index: 100;
+
+	.boxed-tittle-visimisi {
+		margin-top: 140px;
+		margin-bottom: 100px;
+
+		.inner {
+			max-width: 800px;
+			margin: 0 auto;
+			display: block;
+
+			h3 {
+				color: #006e9f;
+				font-size: 28px;
+				text-align: center;
+
+			}
+		}
+	}
+
+	.prelative.container2 {
+		margin: 0 auto;
+		display: block;
+		max-width: 920px;
+	}
+
+	.divide {
+		border-bottom: solid 5px #cb3c40;
+		max-width: 120px;
+		margin: 0px 40px;
+		bottom: 0;
+
+	}
+
+	h3 {
+		font-size: 43px;
+		color: #006e9f;
+	}
+
+	li {
+		font-size: 17px;
+		margin-bottom: 30px;
+		font-weight: 300;
+	}
+
+	.img {
+		margin-top: 100px;
+		img{
+			z-index: 100;
+			position: relative;
+		}
+	}
+}
+
+section.about-visimisi-sec-2 {
+	background-color: #f5f2ec;
+	background-image: url('../images/about-background_03.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	min-height: 1265px;
+	margin-top: -300px;
+	z-index: 50;
+	position: relative;
+}
+
+section.about-background-sec-1 {
+	min-height: 720px;
+	background-color: #f5f2ec;
+
+	.boxed-tittle-background {
+		margin-top: 140px;
+		margin-bottom: 35px;
+
+		.inner {
+			max-width: 800px;
+			margin: 0 auto;
+			display: block;
+
+			h3 {
+				font-size: 28px;
+				color: #006e9f;
+				text-align: center;
+			}
+		}
+	}
+
+	.boxed-subtitle-background {
+		.inner {
+			max-width: 800px;
+			margin: 0 auto;
+			display: block;
+
+			p {
+				text-align: center;
+				font-size: 17px;
+				margin-bottom: 35px;
+			}
+		}
+	}
+}
+
+section.about-background-sec-2 {
+	padding-top: 50px;
+	background-color: #f5f2ec;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	position: relative;
+	//z-index: 100;
+	.up {
+		z-index: 150;
+	}
+
+	.img {
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h3 {
+		margin-top: 190px;
+		font-size: 50px;
+		color: #006e9f;
+		margin-bottom: 30px;
+	}
+
+	p {
+		font-size: 17px;
+		margin-bottom: 30px;
+		line-height: 1.3;
+	}
+}
+
+section.about-background-sec-3 {
+	background-color: #f5f2ec;
+	background-image: url('../images/about-background_03.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	min-height: 1265px;
+	margin-top: -400px;
+	position: relative;
+	//margin-top: -300px;
+	z-index: 50;
+}
+
+section.product-exclusive-sec-1 {
+	font-family: @fira;
+	background-color: #f5f2ec;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+
+	.boxedd {
+		.inner {
+			margin-top: 140px !important;
+			max-width: 800px;
+			margin: 0 auto;
+			display: block;
+			margin-bottom: 50px !important;
+
+			h3 {
+				color: #006e9f;
+				text-align: center;
+				font-size: 28px;
+			}
+		}
+	}
+
+	.boxed {
+		z-index: 150;
+		margin-bottom: 25px;
+		min-height: 460px;
+		-webkit-box-shadow: 7px 9px 14px -8px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 7px 9px 14px -8px rgba(0, 0, 0, 0.75);
+		box-shadow: 7px 9px 14px -8px rgba(0, 0, 0, 0.75);
+
+		.kiri {
+			background-color: #fff;
+			padding: 55px;
+			min-height: 460px;
+
+			p {
+				font-size: 17px;
+				font-weight: 300;
+			}
+
+		}
+
+		.kanan {
+			background-color: #f4eaea;
+			min-height: 460px;
 
 
-@import 'dinda.less';
+		}
+	}
+}
+
+section.product-exclusive-sec-2 {
+	background-color: #f5f2ec;
+	background-image: url('../images/about-background_03.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	min-height: 1265px;
+	margin-top: -300px;
+	position: relative;
+	z-index: 100;
+}
+
+
