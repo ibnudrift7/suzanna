@@ -6,7 +6,7 @@ sans-serif;
 
 html,
 body {
-  // overflow-x: hidden;
+   overflow-x: hidden;
 }
 
 .prelative.container {
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,a {
   font-family: @fira;
 }
 
@@ -384,5 +384,127 @@ section.footer {
     }
   }
 }
+
+section.product-support-sec-1{
+	background: #f5f2ec;
+	.boxed{
+		margin-top: 140px;
+		margin-bottom: 50px;
+		h3{
+			color: #006e9f;
+			font-size: 28px;
+			text-align: center;
+			max-width: 765px;
+			margin: 0 auto;
+		}
+	}
+	.image{
+		img{
+			z-index: 100;
+			margin: 0 auto;
+			position: relative;
+			display: block;
+		}
+		//margin-top: 10px;
+	}
+}
+
+section.product-support-sec-2{
+	background-color: #f5f2ec;
+	background-image: url('../images/about-background_03.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	min-height: 1265px;
+	margin-top: -300px;
+	position: relative;
+	z-index: 50;
+}
+
+section.cover-inside {
+	display: table;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+	min-height: 460px;
+	// background-color: rgba(76, 175, 80, 0.3);
+	background: url('../images/Layer-37.jpg') center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.prelative.container {
+		vertical-align: middle;
+		display: table-cell;
+		height: 100%;
+		.content {
+
+
+			.title {
+				text-align: center;
+				font-weight: 700;
+				font-size: 20px;
+				color: #ffff;
+			}
+
+			.subtitle {
+				text-align: center;
+				font-weight: 700;
+				font-size: 45px;
+				color: #ffff;
+				line-height: 0.6;
+			}
+		}
+
+		.box-model{
+			margin: 0 auto;
+			width: 605px;
+			height: 65px;
+			.kanan{
+				background: #d3aaac;
+				height: 65px;
+				p{
+					margin: 0 auto;
+					padding-top: 18px;
+					text-align: center;
+					a{
+						text-decoration: none;
+						color: #ffffff;
+						font-size: 20px;
+					}
+				}
+			}
+			.kiri{
+				height: 65px;
+				background: #c52028;
+				p{
+					margin: 0 auto;
+					padding-top: 18px;
+					text-align: center;
+					a{
+						text-decoration: none;
+						color: #ffffff;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.blocks_bottomnavcover{
+	position: absolute;
+	bottom: -32.5px;
+	left: 0;
+	width: 100%;
+	z-index: 25;
+	.inner-midle{
+		display: block;
+		margin: 0 auto;
+	}
+}
+.prelative{
+	position: relative;
+}
+
 
 @import 'dinda.less';

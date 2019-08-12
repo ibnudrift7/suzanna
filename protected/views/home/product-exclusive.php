@@ -2,18 +2,39 @@
     <div class="prelative container">
         <div class="row">
             <div class="col-md-60">
-                    <div class="content">
-                        <div class="title">
-                            <p>About Us</p>
-                        </div>
-                        <div class="subtitle">
-                            <p>Our Background</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="content">
+					<div class="title">
+						<p>About Us</p>
+					</div>
+					<div class="subtitle">
+						<p>Our Background</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blocks_bottomnavcover">
+			<div class="d-block mx-auto text-center inner-midle">
+				<div class="row">
+					<div class="col-md-60">
+						<div class="box-model">
+							<div class="row no-gutters">
+								<div class="col-md-30">
+									<div class="kanan">
+										<p><a href="#">Exclusive Brands</a> </p>
+									</div>
+								</div>
+								<div class="col-md-30">
+									<div class="kiri">
+										<p><a href="#">Supporting Brands</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="product-exclusive-sec-1">
