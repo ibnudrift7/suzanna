@@ -21,11 +21,13 @@
                         <div class="prelatife container mx-auto">
                             <div class="bxsl_tx_fcs">
                                 <div class="row no-gutters">
-                                    <div class="col-md-60 mx-auto pt-3 text-center">
-                                        <?php echo $this->setting['home_section1_hero_content'] ?>
+                                    <div class="col-md-60 mx-auto pt-3 text-left">
+                                        <h5>Our Exclusive Brand:</h5>
+										<img src="<?php echo $this->assetBaseurl; ?>logo-slider.png" alt="">
+										<p>The RoyalBaby bicycle products features a series of unique design bikes with the advantage of very light frames. The RoyalBaby products uses magnesium which also makes it extremely comfortable and stable.</p>
                                     </div>
                                     <div class="col-md-60 mx-auto pt-3">
-                                        <button onclick="javascript: window.location.href='<?php echo CHtml::normalizeUrl(array('/home/produk')); ?>';" class="profil mx-auto text-center d-block">Lihat Produk Kami</button>
+                                        <button onclick="javascript: window.location.href='<?php echo CHtml::normalizeUrl(array('/home/produk')); ?>';" class="profil mx-auto text-center d-block">Read More</button>
                                     </div>
                                 </div>
                             </div>
