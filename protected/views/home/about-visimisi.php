@@ -75,3 +75,8 @@
         </div>
     </div>
 </section>
+
+
+<section class="about-visimisi-sec-2">
+    
+</section>

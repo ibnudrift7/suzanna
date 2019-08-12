@@ -41,13 +41,13 @@
     <section class="about-background-sec-2">
         <div class="prelative container">
             <div class="row">
-                <div class="col-md-30">
+                <div class="col-md-30 up">
                     <div class="img">
                     <img src="<?php echo $this->assetBaseurl; ?>about.png" alt="">
 
                     </div>
                 </div>
-                <div class="col-md-30">
+                <div class="col-md-30 up">
                     <h3>Corporate Growth
                             Highlights & Facts</h3>
                     <p>Suzanna Baby Shop is a chained-retail baby store that sells goods for babies and kids. It operates mostly in the prime cities of Indonesia. Each and every branch of Suzanna Baby Shop has a quite large area of approximately around 1000 square metres or 10,763 square feet, with a considerably clean, comfortably environment with safe location.</p>
@@ -61,3 +61,6 @@
     </section>
 
     
+<section class="about-background-sec-3">
+
+</section>
