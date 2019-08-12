@@ -14,7 +14,8 @@
   <div class="prelatife container">
     <div class="clear height-50"></div><div class="height-5"></div>
     <div class="content-text text-center">
-      
+
+
       <div class="outers_listing_newshome defaults_t">
             <div class="row default">
                 <?php for ($j=1; $j < 4; $j++) { ?>
