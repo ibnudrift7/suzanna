@@ -1,11 +1,10 @@
-<!-- <header class="header">
+<header class="header">
   <div class="d-none d-sm-none d-md-block d-lg-block">
       <div class="prelative container pt-3 pb-2">
           <div class="row">
               <div class="col-md-20">
                   <a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">
                       <img src="<?php echo $this->assetBaseurl; ?>logo-header.png" alt="">
-
                   </a>
               </div>
               <div class="col-md-40 pt-2">
@@ -102,7 +101,7 @@
     </div>
     <div class="clear"></div>
   </div>
-</section> -->
+</section>
 
 
 <script type="text/javascript">
@@ -165,10 +164,10 @@
         if(sntop1 > 115){
           // console.log(sntop1);
           $('.header-affixs').removeClass('affix-top').addClass('affix');
-          // $('.header-affixs').addClass('affix');
+          $('.header-affixs').addClass('affix');
         }else{
           $('.header-affixs.affix').removeClass('affix').addClass('affix-top');
-          // $('body').css('padding-top', '0px');
+          $('body').css('padding-top', '0px');
         }
       });
 
