@@ -17,15 +17,7 @@
                       <li><a href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Jadi Agen Kami</a></li>
                       <li><a href="<?php echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Hubungi Kami</a></li>
                       <li><a href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>">Blog Kami</a></li>
-                      <li class="block-outer">
-                          <div class="inside">
-                              asdfjasldfkjaksdfj
-                          </div>
-                          <div class="bottoms-inside">
-                              kdjasflkjasdfkljsdfkljdksfj
-                          </div>
-                      </li>
-                  </ul>
+                    </ul>
                   </div>
               </div>
           </div>
