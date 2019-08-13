@@ -8,7 +8,8 @@
                   </a>
               </div>
               <div class="col-md-40 pt-2">
-                  <ul>
+                  <div class="top-menu">
+                  <ul class="list-inline">
                       <li><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
                       <li><a href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">Produk Bahan Bangunan Kami</a></li>
                       <li><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Profil</a></li>
@@ -16,37 +17,20 @@
                       <li><a href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Jadi Agen Kami</a></li>
                       <li><a href="<?php echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Hubungi Kami</a></li>
                       <li><a href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>">Blog Kami</a></li>
+                      <li class="block-outer">
+                          <div class="inside">
+                              asdfjasldfkjaksdfj
+                          </div>
+                          <div class="bottoms-inside">
+                              kdjasflkjasdfkljsdfkljdksfj
+                          </div>
+                      </li>
                   </ul>
-              </div>
-          </div>
-      </div>
-      <div class="header-bottom">
-          <div class="prelative container">
-              <div class="row">
-                  <div class="col-md-20">
-                      <div class="grant py-2">
-                          <p>GRANIT TILE & ANEKA BAHAN BANGUNAN</p>
-                      </div>
-                  </div>
-                  <div class="col-md-40 text-right d-block">
-                      <div class="whatsapp py-2">
-                          <a href="#">
-                              <p><img src="<?php echo $this->assetBaseurl; ?>logo-wa.png" alt=""><span>
-                              WA / HOTLINE  082154073738 
-                              </span></p>
-                          </a>
-                      </div>
-                      <div class="line-separator">
-                          
-                      </div>
-                      <div class="belanja py-2">
-                          <img src="<?php echo $this->assetBaseurl; ?>belanja-logo.png" alt="">
-                          <p><?php echo Cart::getTotalCartItem(); ?></p>
-                      </div>
                   </div>
               </div>
           </div>
       </div>
+
     </div>
     <div class="d-block d-sm-block d-md-none">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
