@@ -1,23 +1,41 @@
-<header class="header">
+<header class="header <?php if ($active_menu_pg != 'home/index'): ?>header-mantap<?php endif ?>">
   <div class="d-none d-sm-none d-md-block d-lg-block">
-      <div class="prelative container pt-3 pb-2">
+      <div class="prelative container pt-1 pb-0 inners_head">
           <div class="row">
               <div class="col-md-20">
-                  <a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">
-                      <img src="<?php echo $this->assetBaseurl; ?>logo-header.png" alt="">
-                  </a>
+                  <div class="pt-2">
+                      <a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">
+                          <img src="<?php echo $this->assetBaseurl; ?>logo-header.png" alt="">
+                      </a>
+                  </div>
               </div>
-              <div class="col-md-40 pt-2">
-                  <div class="top-menu">
-                  <ul class="list-inline">
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">Produk Bahan Bangunan Kami</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Profil</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/merk')); ?>">Merk & Keagenan</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Jadi Agen Kami</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Hubungi Kami</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>">Blog Kami</a></li>
-                    </ul>
+              <div class="col-md-40">
+                  <div class="tops_head_info pb-2 text-right">
+                      <p>
+                      Whatsapp &nbsp;&nbsp;<i class="fa fa-whatsapp"></i> 081 650 3636 &nbsp;&nbsp;&nbsp;
+                      Email <i class="fa fa-envelope-o"></i> <a href="mailto:info@suzannababyshop.com">info@suzannababyshop.com</a>
+                      </p>
+                  </div>
+
+                  <div class="top-menu text-right">
+                      <ul class="list-inline">
+                          <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
+                          <li class="list-inline-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  About Us
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarAbout">
+                                  <ul class="list-unstyled">
+                                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Our Background</a></li>
+                                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/visimisi')); ?>">Vision & Mission</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>">Products</a></li>
+                          <li class="list-inline-item"><a href="#">Partnership</a></li>
+                          <li class="list-inline-item"><a href="#">Store Location</a></li>
+                          <li class="list-inline-item last contacts"><a href="#">Contact Us</a></li>
+                        </ul>
                   </div>
               </div>
           </div>
@@ -36,12 +54,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">Produk Bahan Bangunan Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Profil</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/merk')); ?>">Merk & Keagenan</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Jadi Agen Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Hubungi Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>">Blog Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/merk')); ?>">Partnership</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Store Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Contact Us</a></li>
           </ul>
         </div>
       </nav>
@@ -64,12 +81,11 @@
           <div class="menu-taffix">
             <ul class="list-inline d-inline">
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">Produk Bahan Bangunan</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Profil</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/merk')); ?>">Merk & Keagenan</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Jadi Agen</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Hubungi</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>">Blog</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">About Us</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>">Product</a></li>
+              <li class="list-inline-item"><a href="#">Partnership</a></li>
+              <li class="list-inline-item"><a href="#">Store Location</a></li>
+              <li class="list-inline-item last contacts"><a href="#">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -78,6 +94,26 @@
     <div class="clear"></div>
   </div>
 </section>
+
+<header class="header-mobile homepage_head">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<a class="navbar-brand" href="/en"><img src="<?php echo $this->assetBaseurl; ?>logo-footer.png" alt="" class="img img-fluid"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
+			<ul class="navbar-nav mr-auto">
+				<li class="list-inline-item menu"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
+				<li class="list-inline-item menu"><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">About Us</a></li>
+				<li class="list-inline-item menu"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>">Product</a></li>
+				<li class="list-inline-item menu"><a href="#">Partnership</a></li>
+				<li class="list-inline-item menu"><a href="#">Store Location</a></li>
+				<li class="list-inline-item menu"><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
 
 
 <script type="text/javascript">

@@ -82,27 +82,28 @@
             <div class="col-md-60">
                 <h3>Our Exclusive Brands</h3>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="image">
 					<img class="w-100" src="<?php echo $this->assetBaseurl; ?>brevi.png" alt="">
 				</div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="image">
 					<img class="w-100" src="<?php echo $this->assetBaseurl; ?>royal.png" alt="">
 				</div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="image">
 					<img class="w-100" src="<?php echo $this->assetBaseurl; ?>cam.png" alt="">
 				</div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="image kanan">
 					<img class="w-100" src="<?php echo $this->assetBaseurl; ?>gee.png" alt="">
 				</div>
             </div>
         </div>
     </div>
+	<img class="d-block d-sm-none" src="<?php echo $this->assetBaseurl; ?>home-sec-3_02-mob.jpg" alt="">
 </section>
 

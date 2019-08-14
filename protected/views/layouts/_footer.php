@@ -36,7 +36,7 @@
 <section class="home-sec-5">
     <div class="prelative container">
         <div class="row">
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="box-content">
                     <a href="#">
                         <div class="image">
@@ -47,7 +47,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="box-content">
                     <a href="#">
                         <div class="image">
@@ -58,7 +58,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="box-content">
                     <a href="#">
                         <div class="image">
@@ -69,7 +69,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="box-content kanan">
                     <a href="#">
                         <div class="image ">
