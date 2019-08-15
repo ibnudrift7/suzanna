@@ -16,7 +16,7 @@
 	</div>
 </section>
 
-<div class="partnership">
+<section class="partnership">
 	<div class="prelative container">
 		<div class="row">
 			<div class="col-md-60">
@@ -29,7 +29,7 @@
 			</div>
 			<div class="col-md-30">
 				<div class="title">
-					<h4>For Brand Principalstt</h4>
+					<h2>For Brand Principals</h2>
 				</div>
 				<div class="content">
 					<ul>
@@ -42,7 +42,7 @@
 			</div>
 			<div class="col-md-30">
 				<div class="title">
-					<h4>For Agents / Distributors</h4>
+					<h2>For Agents / Distributors</h2>
 				</div>
 				<div class="content">
 					<ul>
@@ -57,10 +57,12 @@
 					</ul>
 				</div>
 			</div>
-			<div class="image"><img src="" alt=""></div>
+			<div class="image">
+				<img src="<?php echo $this->assetBaseurl; ?>partnership.png" alt="">
+			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 
 <!--isinya ikutkan class .about-visimisi-sec-2, cari di style.less-->
