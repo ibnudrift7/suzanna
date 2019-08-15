@@ -524,6 +524,14 @@ class HomeController extends Controller
 		$this->render('about-visimisi', array(	
 		));
 	}
+
+	public function actionPartnership()
+	{
+		$this->pageTitle = 'Partnership - '.$this->pageTitle;
+		$this->layout='//layouts/column2';
+		$this->render('partnership', array(
+		));
+	}
 	public function actionProduct_exclusive()
 	{
 		$this->pageTitle = 'Product Exlusive - '.$this->pageTitle;
@@ -1184,7 +1192,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 
 	public function actionContact()
 	{
-		$this->layout='//layouts/column2';
+		$this->layout='//layouts/column3';
 
 		$this->pageTitle = 'Contact Us - '.$this->pageTitle;
 
