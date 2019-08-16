@@ -1361,4 +1361,97 @@ section.store-sec-2 {
   z-index: 50;
   position: relative;
 }
+@media screen and (max-width: 450px) {
+  section.contact-sec-1 .title {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+  section.contact-sec-1 .title h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #006e9f;
+  }
+  section.contact-sec-1 .shop-hotline h6 {
+    font-size: 13px;
+    color: #484848;
+  }
+  section.contact-sec-1 .for-any {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #cb4247;
+  }
+  section.partnership .boxed-inner {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  section.partnership .boxed-inner h3 {
+    font-size: 23px;
+    color: #006e9f;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
+  section.partnership .boxed-inner p {
+    font-weight: 500;
+    color: #939393;
+    font-size: 12px;
+    padding-bottom: 50px;
+  }
+  section.partnership .title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #006e9f;
+    padding-bottom: 5px;
+  }
+  section.partnership .content li {
+    font-size: 14px;
+    font-weight: 300;
+    color: #484848;
+    padding-bottom: 16px;
+  }
+  section.partnership .boxed-inner h5 {
+    color: #c52026;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  section.store .prelative.container2 .title h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #006e9f;
+    text-align: center;
+    padding-top: 65px;
+  }
+  section.store .prelative.container2 .title {
+    padding-bottom: 20px;
+  }
+  section.store .prelative.container2 .title {
+    padding-bottom: 15px;
+  }
+  section.store .prelative.container2 .boxed-locator {
+    text-align: center;
+    padding-top: 45px;
+  }
+  section.store-sec-2 {
+    background-color: #f5f2ec;
+    background-image: url(../images/about-background_03.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 1170px;
+    margin-top: -300px;
+    z-index: 50;
+    position: relative;
+  }
+  section.partner-sec-2 {
+    background-color: #f5f2ec;
+    background-image: url(../images/about-background_03.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 1090px;
+    margin-top: -300px;
+    z-index: 50;
+    position: relative;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

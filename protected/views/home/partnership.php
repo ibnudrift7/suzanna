@@ -29,7 +29,7 @@
 			</div>
 			<div class="col-md-30">
 				<div class="title">
-					<h2>For Brand Principals</h2>
+					<p>For Brand Principals</p>
 				</div>
 				<div class="content">
 					<ul>
@@ -42,7 +42,7 @@
 			</div>
 			<div class="col-md-30">
 				<div class="title">
-					<h2>For Agents / Distributors</h2>
+					<p>For Agents / Distributors</p>
 				</div>
 				<div class="content">
 					<ul>
