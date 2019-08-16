@@ -83,9 +83,9 @@
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">About Us</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>">Product</a></li>
-              <li class="list-inline-item"><a href="#">Partnership</a></li>
-              <li class="list-inline-item"><a href="#">Store Location</a></li>
-              <li class="list-inline-item last contacts"><a href="#">Contact Us</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/partnership')); ?>">Partnership</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/store_locator')); ?>">Store Location</a></li>
+              <li class="list-inline-item last contacts"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -102,14 +102,14 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
+		<div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
 			<ul class="navbar-nav mr-auto">
 				<li class="list-inline-item menu"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
 				<li class="list-inline-item menu"><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">About Us</a></li>
 				<li class="list-inline-item menu"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>">Product</a></li>
-				<li class="list-inline-item menu"><a href="#">Partnership</a></li>
-				<li class="list-inline-item menu"><a href="#">Store Location</a></li>
-				<li class="list-inline-item menu"><a href="#">Contact</a></li>
+				<li class="list-inline-item menu"><a href="<?php echo CHtml::normalizeUrl(array('/home/partnership')); ?>">Partnership</a></li>
+				<li class="list-inline-item menu"><a href="<?php echo CHtml::normalizeUrl(array('/home/store_locator')); ?>">Store Location</a></li>
+				<li class="list-inline-item menu"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -136,7 +136,7 @@
       //     $('.popup_carts_header').fadeIn();
       // });
       // $('.popup_carts_header').live('mouseleave', function(){
-      //   setTimeout(function(){ 
+      //   setTimeout(function(){
       //       $('.popup_carts_header').fadeOut();
       //   }, 500);
       // });
@@ -187,3 +187,7 @@
 
   });
 </script>
+
+<style>
+
+</style>

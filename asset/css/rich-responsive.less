@@ -2,7 +2,7 @@
 
 	html,
 	body {
-		overflow-x: inherit;
+		overflow-x: auto;
 	}
 
 }
@@ -157,13 +157,16 @@
 	}
 	section.cover-inside .prelative.container .box-model {
 		margin: 0 auto;
-		width: 330px;
+		width: 100%;
 		height: 65px;
 		background: #d3aaac;
 		box-shadow: 7px 9px 14px -8px rgba(0,0,0,.75);
 	}
+	.blocks_bottomnavcover .row.no-gutters{
+		background: #d3aaac;
+	}
 	section.about-background-sec-1 .boxed-tittle-background {
-		margin-top: 130px;
+		margin-top: 150px;
 		margin-bottom: 30px;
 	}
 	section.about-background-sec-1 .boxed-tittle-background .inner h3 {
@@ -181,11 +184,13 @@
 		font-size: 40px;
 		color: #006e9f;
 		margin-bottom: 30px;
+		text-align: center;
 	}
 	section.about-background-sec-2 p {
 		font-size: 14px;
 		margin-bottom: 15px;
 		line-height: 1.4;
+		text-align: center;
 	}
 	section.about-background-sec-3 {
 		background-color: #f5f2ec;
@@ -219,7 +224,7 @@
 		min-height: 425px;
 	}
 	section.about-visimisi-sec-1 .boxed-tittle-visimisi {
-		margin-top: 140px;
+		margin-top: 150px;
 		margin-bottom: 75px;
 	}
 	section.about-visimisi-sec-1 .boxed-tittle-visimisi .inner h3 {
@@ -255,10 +260,14 @@
 	}
 	section.product-support-sec-1 .boxed h3 {
 		color: #006e9f;
-		font-size: 22px;
+		font-size: 18px;
 		text-align: center;
 		max-width: 765px;
 		margin: 0 auto;
+	}
+	section.product-support-sec-1 .boxed{
+		margin-top: 150px;
+		margin-bottom: 30px;
 	}
 	section.product-support-sec-2 {
 		background-color: #f5f2ec;
@@ -271,7 +280,36 @@
 		z-index: 50;
 	}
 	section.home-sec-1 .boxed-images .inner-right img,section.home-sec-1 .boxed-images .inner-left img{
-		width: 100px !important;
+		width: 100% !important;
+	}
+	section.home-sec-1 .boxed-images .inner-left img{
+		margin-right: 0;
+		float: none;
+		padding-top: 25px;
+	}
+	section.home-sec-1 .boxed-images .inner-right img{
+		margin-left: 0;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.section-kanan-home1{
+		margin-top: 25px;
+	}
+	section.home-sec-3 img.d-block.d-sm-none{
+		width: 100%;
+	}
+	section.home-sec-4 form .form-row .row{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	section.cover-inside{
+		margin-top: 83px;
+	}
+	section.cover-inside .prelative.container .box-model p {
+		margin: 0 auto;
+		padding-top: 18px;
+		text-align: center;
+		padding-bottom: 18px;
 	}
 }
 

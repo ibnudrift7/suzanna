@@ -17,7 +17,7 @@
                     </div>
 				</div>
             </div>
-            <div class="col-md-30">
+            <div class="col-md-30 d-none d-sm-block">
                 <div class="boxed-images">
                     <div class="inner-right">
                         <img src="<?php echo $this->assetBaseurl; ?>Ellipse-3-copy.png" alt="">
@@ -33,6 +33,13 @@
                     </div>
                 </div>
             </div>
+			<div class="col-md-30 d-block d-sm-none">
+				<div class="boxed-images">
+					<div class="inner-right">
+						<img src="<?php echo $this->assetBaseurl; ?>Ellipse-3-copy.png" alt="">
+					</div>
+				</div>
+			</div>
         </div>
     </div>
 </section>
