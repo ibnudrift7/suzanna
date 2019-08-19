@@ -1,0 +1,116 @@
+----------------
+
+Homepage.
+
+home_sect1_titles
+home_sect1_desc
+home_sect1_links_banner
+home_sect1_textlinks_banner
+home_sect1_pictures
+
+home_sect2_titles
+home_sect2_desc
+home_sect2_links_banner
+home_sect2_textlinks_banner
+home_sect2_pictures
+
+home_sect3_store_value
+home_sect3_human_value
+home_sect3_brands_value
+home_sect3_productSku_value
+
+----------------
+
+About Us.
+
+about_hero_image
+about_title
+about_subtitle
+
+about1_content
+
+about2_pictures_banner
+about2_content
+
+about3_vision_content
+about3_visi
+about3_misi
+about3_pictures_banner_middle
+
+----------------
+
+Products.
+
+Exclusive Brand.
+
+product_hero_image
+product_title
+product_subtitle
+products_brand_ncontent
+
+- titles_category
+- logo_category
+- content_category
+- banner_category
+
+( ambil data gallery, dan ada field category_id )
+
+
+Supporting Brand.
+
+- title
+- logo
+- sort_urutan
+
+
+----------------
+
+Partnership.
+
+partner_hero_image
+partner_title
+partner_subtitle
+
+partner_content
+
+partner_principals_title
+partner_principals_content
+
+partner_agents_title
+partner_agents_content
+
+partners2_picture_banners
+
+----------------
+
+Store Location.
+
+store_hero_image
+store_title
+store_subtitle
+
+store_content
+
+address_data.
+- city (Surabaya, Jakarta, Bandung, Sumatra)
+- address
+
+----------------
+
+Contact Us.
+
+contact_hero_image
+contact_title
+contact_subtitle
+
+contact_wa
+contact_email
+contact_instagram
+contact_facebook
+
+contact_address
+contact_topcontacts
+
+contact_top_form_titles
+contact_top_form_subtitles
+

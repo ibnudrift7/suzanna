@@ -8,5 +8,5 @@ $dt_DB = array();
  		// 'database' => 'richmore_arsimetris',
  		'username' => 'root',
  		'password' => '',
- 		'database' => 'dsgm',
+ 		'database' => 'suzanna',
 	);

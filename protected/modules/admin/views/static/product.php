@@ -1,13 +1,13 @@
 <?php
 $this->breadcrumbs=array(
 	'setting'=>array('/admin/setting/index'),
-	'Product Discount',
+	'Product',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-phone',
 	'title'=>'Setting',
-	'subtitle'=>'Product Discount',
+	'subtitle'=>'Product',
 );
 ?>
 <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(

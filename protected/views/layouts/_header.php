@@ -32,9 +32,9 @@
                               </div>
                           </li>
                           <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>">Products</a></li>
-                          <li class="list-inline-item"><a href="#">Partnership</a></li>
-                          <li class="list-inline-item"><a href="#">Store Location</a></li>
-                          <li class="list-inline-item last contacts"><a href="#">Contact Us</a></li>
+                          <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/partnership')); ?>">Partnership</a></li>
+                          <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/store_locator')); ?>">Store Location</a></li>
+                          <li class="list-inline-item last contacts"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">Contact Us</a></li>
                         </ul>
                   </div>
               </div>

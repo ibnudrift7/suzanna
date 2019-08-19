@@ -4,7 +4,7 @@ class AdminModule extends CWebModule
 {
 	public function init()
 	{
-		Yii::app()->name = 'Arsimetris Admin';
+		Yii::app()->name = 'Suzanna Baby Shop Admin';
 		// this method is called when the module is being created
 		// you may place code here to customize the module or the application
 
