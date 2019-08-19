@@ -109,9 +109,21 @@
 			}
 			?>
 			<?php
-	    	$models = PrdProduct::model()->getAllDataDesc($this->languageID);
-		    $lists_gallery = CHtml::listData($models, 
-		                'id', 'name'); 
+	    	// $models = PrdProduct::model()->getAllDataDesc($this->languageID);
+	    	$criteria = new CDbCriteria;
+			$criteria->with = array('description');
+			$criteria->addCondition('t.id = :id');
+			$criteria->params[':id'] = $_GET['category'];
+			$criteria->addCondition('t.type = :type');
+			$criteria->params[':type'] = 'category';
+			// $criteria->limit = 3;
+			$criteria->order = 'sort ASC';
+			$strCategory = PrdCategory::model()->findAll($criteria);
+
+		    $lists_gallery = array();
+		    foreach ($strCategory as $key => $value) {
+		    	$lists_gallery[$value->id] = $value->description->name;
+		    }
 	    	?>
 			<?php echo $form->dropDownListRow($model,'product_id', $lists_gallery, array('class'=>'input-block-level', 'empty'=>'-- Pilih Produk --')); ?>
 
@@ -200,6 +212,8 @@
 				<?php endif; ?>
 		    </div>
 		</div>
+		*/ ?>
+
 		<div class="divider15"></div>
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
@@ -253,7 +267,6 @@
 		    </div>
 		</div>
 		<div class="divider15"></div>
-		*/ ?>
 
 	</div>
 </div>

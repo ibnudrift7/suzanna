@@ -4,8 +4,10 @@
         <li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/admin/product/index')); ?>"><span class="fa fa-tag"></span> <?php echo Tt::t('admin', 'Products') ?></a>
             <ul>
                 <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/product')); ?>">All Product Discount</a></li> -->
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/product/index')); ?>">View Products</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/product/create')); ?>">Add Products</a></li>
+                <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/product/index')); ?>">View Products</a></li> -->
+
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/gallery/index')); ?>">View Product</a></li>
+                <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/product/create')); ?>">Add Products</a></li> -->
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/category/index')); ?>">Category</a></li>
                 
                 <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/filtercat/index')); ?>">Filter</a></li> -->

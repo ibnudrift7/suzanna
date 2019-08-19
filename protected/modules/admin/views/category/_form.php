@@ -73,10 +73,9 @@
 		</div>
 	</div>
 	<?php endif; ?>
-	<?php /*
 	<br>
 	<?php echo $form->fileFieldRow($model,'image2',array(
-	'hint'=>'<b>Note:</b> Ukuran gambar adalah 981 x 386px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
+	'hint'=>'<b>Note:</b> Ukuran gambar adalah heights 100px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
 	<?php if ($model->scenario == 'update'): ?>
 	<div class="control-group">
 		<label class="control-label">&nbsp;</label>
@@ -85,6 +84,8 @@
 		</div>
 	</div>
 	<?php endif; ?>
+
+	<?php /*
 	<br>
 	<?php echo $form->fileFieldRow($model,'image3',array(
 	'hint'=>'<b>Note:</b> Ukuran gambar adalah 305 x 225px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
