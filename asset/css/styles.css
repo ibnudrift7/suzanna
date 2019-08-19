@@ -461,7 +461,7 @@ section.home-sec-4 form .form-row {
 }
 section.home-sec-4 form .form-row input {
   background: #bf2758;
-  border: 1px solid #f192ae;
+  border: 2px solid #f192ae;
   border-radius: 25px;
   width: 270px;
   height: 40px;
@@ -480,6 +480,75 @@ section.home-sec-4 form button.submit {
   color: #bf2758;
   font-weight: 700;
   font-size: 15px;
+}
+section.contact-sec-2 {
+  background: #b61c4c;
+  min-height: 310px;
+}
+section.contact-sec-2 .prelative.container {
+  padding: 90px 0;
+}
+section.contact-sec-2 .prelative.container .image img {
+  z-index: 150;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: -145px;
+}
+section.contact-sec-2 .prelative.container .subtitle {
+  padding-top: 0px;
+}
+section.contact-sec-2 .prelative.container .subtitle h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+section.contact-sec-2 .prelative.container .caption p {
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 300;
+}
+section.contact-sec-2 .prelative.container form {
+  margin: 0 auto;
+  padding-top: 15px;
+}
+section.contact-sec-2 .prelative.container form .form-row {
+  width: 835px;
+}
+section.contact-sec-2 .prelative.container form .form-row input {
+  background: #bf2758;
+  border: 2px solid #f192ae;
+  border-radius: 25px;
+  width: 100%;
+  height: 40px;
+}
+section.contact-sec-2 .prelative.container form .form-row input::placeholder {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+section.contact-sec-2 .prelative.container form .form-row textarea {
+  margin-top: 15px;
+  width: 100%;
+  height: 115px;
+  background: transparent;
+  border: 2px solid #f192ae;
+  border-radius: 25px;
+}
+section.contact-sec-2 .prelative.container form button.submit {
+  margin-top: 10px;
+  width: 160px;
+  background: #ffffff;
+  border-radius: 25px;
+  height: 40px;
+  border: none;
+  color: #bf2758;
+  font-weight: 700;
+  font-size: 15px;
+  float: right;
 }
 section.home-sec-5 {
   min-height: 195px;
@@ -1005,7 +1074,7 @@ header.header-mobile.homepage_head ul.navbar-nav li a {
     padding: 50px 0;
   }
   section.home-sec-1 {
-    padding-top: 120px;
+    padding-top: 50px;
   }
   section.home-sec-1 .boxed-descriptions .inner h3 {
     max-width: 500px;
@@ -1169,6 +1238,61 @@ header.header-mobile.homepage_head ul.navbar-nav li a {
   section.product-support-sec-1 .boxed {
     margin-top: 150px;
     margin-bottom: 30px;
+  }
+  section.contact-sec-2 .prelative.container .subtitle h3 {
+    font-size: 20px;
+  }
+  section.contact-sec-2 .prelative.container .caption p {
+    font-size: 14px;
+  }
+  section.contact-sec-2 .prelative.container form .form-row {
+    width: 100%;
+  }
+  section.contact-sec-2 .prelative.container form .form-row input,
+  section.contact-sec-2 .prelative.container form .form-row textarea,
+  section.contact-sec-2 .prelative.container form button.submit {
+    width: 270px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .fcs-wrapper {
+    margin-top: 83px;
+  }
+  .carousel-caption {
+    right: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+  }
+  .bxsl_tx_fcs h5 {
+    color: #006e9f;
+    margin-bottom: 15px;
+  }
+  .bxsl_tx_fcs p {
+    color: #484848;
+    margin-top: 15px;
+  }
+  .bxsl_tx_fcs button {
+    background: transparent;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #c52026;
+    border-radius: 20px;
+    color: #c52026;
+    padding: 10px 20px;
+    float: left;
+    cursor: pointer;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  section.contact-sec-2 .prelative.container form button.submit {
+    float: none;
+  }
+  section.contact-sec-2 .prelative.container form .form-row .row {
+    margin-left: 0;
+    margin-right: 0;
   }
   section.product-support-sec-2 {
     background-color: #f5f2ec;
@@ -1367,7 +1491,7 @@ section.store-sec-2 {
     padding-bottom: 50px;
   }
   section.contact-sec-1 .title h4 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     color: #006e9f;
   }
@@ -1376,14 +1500,14 @@ section.store-sec-2 {
     color: #484848;
   }
   section.contact-sec-1 .for-any {
-    padding-top: 50px;
-    padding-bottom: 75px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     font-weight: 700;
     font-size: 14px;
     color: #cb4247;
   }
   section.partnership .boxed-inner {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
   }
@@ -1397,7 +1521,10 @@ section.store-sec-2 {
     font-weight: 500;
     color: #939393;
     font-size: 12px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+  }
+  section.partnership .image img {
+    width: 100%;
   }
   section.partnership .title {
     font-weight: 700;
@@ -1418,7 +1545,7 @@ section.store-sec-2 {
   }
   section.store .prelative.container2 .title h3 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     color: #006e9f;
     text-align: center;
     padding-top: 65px;

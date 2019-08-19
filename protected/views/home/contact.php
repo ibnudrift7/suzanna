@@ -47,3 +47,38 @@
 		</div>
 	</div>
 </section>
+
+
+<section class="contact-sec-2">
+	<div class="prelative container">
+		<div class="row">
+			<div class="col-md-60">
+				<div class="subtitle">
+					<h3>Get In Touch With Suzanna Babyshop</h3>
+				</div>
+				<div class="caption">
+					<p>Our resourceful team will get in touch with you, please leave your contact detail below.</p>
+				</div>
+			</div>
+			<form>
+				<div class="form-row">
+					<div class="row">
+						<div class="col-md-20">
+							<input type="text" class="form-control" placeholder="Your Name">
+						</div>
+						<div class="col-md-20">
+							<input type="text" class="form-control" placeholder="Your Email">
+						</div>
+						<div class="col-md-20">
+							<input type="text" class="form-control" placeholder="Your Mobile Phone">
+						</div>
+						<div class="col-md-60"><textarea name="" id="" cols="" rows=""></textarea></div>
+						<div class="col-md-60">
+							<button class="submit">Submit</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+</section>
+

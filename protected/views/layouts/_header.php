@@ -97,7 +97,7 @@
 
 <header class="header-mobile homepage_head">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		<a class="navbar-brand" href="/en"><img src="<?php echo $this->assetBaseurl; ?>logo-footer.png" alt="" class="img img-fluid"></a>
+		<a class="navbar-brand" href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>"><img src="<?php echo $this->assetBaseurl; ?>logo-footer.png" alt="" class="img img-fluid"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
