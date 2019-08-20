@@ -43,7 +43,7 @@
                             <img class="" src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy.png" alt="">
                         </div>
                         <h6>Whatsapp Hotline</h6>
-                        <p>081 650 3636 (Click to chat)</p>
+                        <p><a href="https://wa.me/<?php echo str_replace(' ', '', $this->setting['contact_wa']) ?>"><?php echo $this->setting['contact_wa'] ?></a> (Click to chat)</p>
                     </a>
                 </div>
             </div>
@@ -54,29 +54,29 @@
                             <img class="" src="<?php echo $this->assetBaseurl; ?>mail.png" alt="">
                         </div>
                         <h6>Email</h6>
-                        <p>info@suzannababyshop</p>
+                        <p><a href="mailto:<?php echo $this->setting['contact_email'] ?>"><?php echo $this->setting['contact_email'] ?></a></p>
                     </a>
                 </div>
             </div>
             <div class="col-md-15 col-30">
                 <div class="box-content">
-                    <a href="#">
+                    <a target="_blank" href="https://facebook.com/<?php echo $this->setting['url_facebook'] ?>">
                         <div class="image">
                             <img class="" src="<?php echo $this->assetBaseurl; ?>ig.png" alt="">
                         </div>
                         <h6>Instagram</h6>
-                        <p>suzannababyshop</p>
+                        <p><?php echo $this->setting['url_facebook'] ?></p>
                     </a>
                 </div>
             </div>
             <div class="col-md-15 col-30">
                 <div class="box-content kanan">
-                    <a href="#">
+                    <a target="_blank" href="https://instagram.com/<?php echo $this->setting['url_instagram'] ?>">
                         <div class="image ">
                             <img class="" src="<?php echo $this->assetBaseurl; ?>fb.png" alt="">
                         </div>
                         <h6>Facebook</h6>
-                        <p>suzannababyshop</p>
+                        <p><?php echo $this->setting['url_instagram'] ?></p>
                     </a>
                 </div>
             </div>
