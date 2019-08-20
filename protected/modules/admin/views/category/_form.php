@@ -37,7 +37,7 @@
 
 		<?php
 		echo $form->labelEx($value, '['.$lang->code.']name');
-	    echo $form->textField($value,'['.$lang->code.']name',array('class'=>'span8'));
+	    echo $form->textField($value,'['.$lang->code.']name',array('class'=>'span10'));
 	    ?>
 	    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 	    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
@@ -54,7 +54,7 @@
 
 		<?php
 		echo $form->labelEx($value, '['.$lang->code.']desc');
-	    echo $form->textArea($value,'['.$lang->code.']desc',array('class'=>'span8'));
+	    echo $form->textArea($value,'['.$lang->code.']desc',array('class'=>'span10'));
 	    ?>
 	    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 	    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
@@ -73,6 +73,8 @@
 		</div>
 	</div>
 	<?php endif; ?>
+	
+	<?php /*
 	<br>
 	<?php echo $form->fileFieldRow($model,'image2',array(
 	'hint'=>'<b>Note:</b> Ukuran gambar adalah heights 100px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
@@ -85,7 +87,6 @@
 	</div>
 	<?php endif; ?>
 
-	<?php /*
 	<br>
 	<?php echo $form->fileFieldRow($model,'image3',array(
 	'hint'=>'<b>Note:</b> Ukuran gambar adalah 305 x 225px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>

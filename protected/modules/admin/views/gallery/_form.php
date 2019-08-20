@@ -110,10 +110,11 @@
 			?>
 			<?php
 	    	// $models = PrdProduct::model()->getAllDataDesc($this->languageID);
+
 	    	$criteria = new CDbCriteria;
 			$criteria->with = array('description');
-			$criteria->addCondition('t.id = :id');
-			$criteria->params[':id'] = $_GET['category'];
+			// $criteria->addCondition('t.id = :id');
+			// $criteria->params[':id'] = $_GET['category'];
 			$criteria->addCondition('t.type = :type');
 			$criteria->params[':type'] = 'category';
 			// $criteria->limit = 3;
@@ -125,7 +126,7 @@
 		    	$lists_gallery[$value->id] = $value->description->name;
 		    }
 	    	?>
-			<?php echo $form->dropDownListRow($model,'product_id', $lists_gallery, array('class'=>'input-block-level', 'empty'=>'-- Pilih Produk --')); ?>
+			<?php echo $form->dropDownListRow($model, 'product_id', $lists_gallery, array('class'=>'input-block-level span8', 'empty'=>'-- Pilih Produk --')); ?>
 
 				<div class="row-fluid">
 					<div class="span6">

@@ -77,7 +77,7 @@ class PrdCategory extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'parent_id' => 'Parent',
-			'image' => 'Image Featured',
+			'image' => 'Image Logo',
 			'image2' => 'Image Logo',
 			'type' => 'Type',
 			'data' => 'Data',
