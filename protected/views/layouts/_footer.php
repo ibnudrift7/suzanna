@@ -38,24 +38,24 @@
         <div class="row">
             <div class="col-md-15 col-30">
                 <div class="box-content">
-                    <a href="#">
+                    <!-- <a href="#"> -->
                         <div class="image">
                             <img class="" src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy.png" alt="">
                         </div>
                         <h6>Whatsapp Hotline</h6>
-                        <p><a href="https://wa.me/<?php echo str_replace(' ', '', $this->setting['contact_wa']) ?>"><?php echo $this->setting['contact_wa'] ?></a> (Click to chat)</p>
-                    </a>
+                        <p><a href="https://wa.me/<?php echo str_replace(' ', '', $this->setting['contact_wa']) ?>"><?php echo $this->setting['contact_wa'] ?> (Click to chat)</a></p>
+                    <!-- </a> -->
                 </div>
             </div>
             <div class="col-md-15 col-30">
                 <div class="box-content">
-                    <a href="#">
+                    <!-- <a href="#"> -->
                         <div class="image">
                             <img class="" src="<?php echo $this->assetBaseurl; ?>mail.png" alt="">
                         </div>
                         <h6>Email</h6>
                         <p><a href="mailto:<?php echo $this->setting['contact_email'] ?>"><?php echo $this->setting['contact_email'] ?></a></p>
-                    </a>
+                    <!-- </a> -->
                 </div>
             </div>
             <div class="col-md-15 col-30">
