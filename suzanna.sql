@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Agu 2019 pada 12.04
+-- Waktu pembuatan: 20 Agu 2019 pada 11.51
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.1.24
 
@@ -63,72 +63,15 @@ CREATE TABLE `address` (
 --
 
 INSERT INTO `address` (`id`, `category_id`, `nama`, `address_1`, `address_2`, `telp`, `fax`, `image`, `prov`, `kota`, `email`, `lat`, `lng`, `link`, `type`, `sort`) VALUES
-(2, 0, 'PT. Toscar Perkasa Indonesia', 'Jl. Taman Surya 5 Kawasan Palm Paradise Ruko Royal Paradise A19, RT.4/RW.3, Pegadungan, Kalideres', '', '021 - 2967 1014', '', '', 'DKI Jakarta', 'Jakarta Barat', '', '-6.1343570', '106.7068275', NULL, 'dealer', 106),
-(3, 0, 'PT. Dynami Perkasa Indonesia', 'Komplek Surya Inti Permata I Blok B 8-9, Jl. HR. Muhammad Kav. 360-380, Pradahkalikendal, Surabaya', '', '031 - 734 2189', '', '', 'Jawa Timur', 'Surabaya', '', '-7.2825370', '112.6864250', NULL, 'dealer', 111),
-(4, 0, 'PT. Hamparan Daya Cipta Infinity', 'Jl. Musyawarah No.29, RT.3/RW.2, Kb. Jeruk, Kota, Jakarta Barat', '', '021 - 5695 8989', '', '', 'DKI Jakarta', 'Jakarta Barat', '', '-6.2005790', '106.7717330', NULL, 'dealer', 101),
-(5, 0, 'PT. Binamitra Handaya Perkasa', 'JL kelapa Hibrida Raya RA. 3/15, Pegangsaan dua, Kelapa gading, Jakarta Utara 14250', '', '021 - 4534512', '', '', 'DKI Jakarta', 'Jakarta Utara', '', '-6.1480720', '106.9104790', NULL, 'dealer', 116),
-(6, 0, 'PT. Seltech Utama Mandiri', 'Jl. Sisingamangaraja KM.7,2 No.170, Harjosari II, Medan Amplas, Kota Medan', '', '061 - 7862123', '', '', 'Sumatera Utara', 'Medan ', '', '3.5373010', '98.7097430', NULL, 'dealer', 121),
-(7, 0, 'PT. Wijaya Makmur Abadi Sejahtera', 'The Icon Business Park Ruko C Blok G/3 Lantai 1  BSD City Tangerang ', '', '+62 813-8373-2211', '', '', 'Banten', 'Tangerang', '', '-6.3164810', '106.6518290', NULL, 'dealer', 126),
-(8, 0, 'PT. Penta Aircond', 'The Icon Business Park Ruko C Blok G/3 Lantai 2  BSD City Tangerang ', '', '0882-1091-9772', '', '', 'Banten', 'Tangerang', '', '-6.3164810', '106.6518290', NULL, 'dealer', 131),
-(9, 0, 'PT. Eskimo Wieraperdana', 'Jl. Palmerah Barat Blok B-5 No. 38, Grogol Utara, Kebayoran Lama, Jakarta Selatan', '', '(021) 5308791   ', '', '', 'DKI Jakarta', 'Jakarta Selatan', '', '-6.2073270', '106.7865160', NULL, 'dealer', 136),
-(10, 0, 'PT. Arista Pratama Jaya', 'Jl. Tebet Barat Dalam Raya No.35, RT.6/RW.3, Tebet, Kota Jakarta Selatan', '', '021 8302150', '', '', 'DKI Jakarta', 'Jakarta Selatan', '', '-6.2365220', '106.8473160', NULL, 'dealer', 141),
-(12, 0, 'PT. Anekabangun Eka Pratama', 'Rukan Royal Palace Blok B-26 JL Prof. Dr. Soepomo, SH No. 178 Jakarta Selatan 12870', '', '021 - 8350103', '', '', 'DKI Jakarta', 'Jakarta Selatan', '', '-6.2291320', '106.8473150', NULL, 'dealer', 146),
-(13, 0, 'CV. Multi Wahana Aircond', 'Rukan Artha Gading Niaga blok C No. 8, Kelapa Gading, Jakarta Utara', '', '021 453 3996 / 021 4533899 / 021 45850561 / 021 45850562', '', '', 'DKI Jakarta', 'Jakarta Utara', '', '-6.1460890', '106.8954940', 'http://www.acwahana.com', 'dealer', 20),
-(14, 0, 'PT. Asri Lestari (Dunia Electric)', 'Ruko Glodok Plaza H/12A, Jl. Pinangsia Raya, Jakarta Barat', '', '021-6296264, 6280186, 6261323, 6011903', '', '', 'DKI Jakarta', 'Jakarta Barat', '', '-6.1427747', '106.8168229', NULL, 'dealer', 1),
-(15, 0, 'PT. Gunung Bintang Semesta', 'JL Danau Sunter Utara Blok J 12/23,Jakarta Utara', '', '021 - 6505022, 6505236, 6505021', '', '', 'DKI Jakarta', 'Jakarta Utara', '', '-6.1406010', '106.8833000', NULL, 'dealer', 10),
-(16, 0, 'PT. Grand Indo Sukses (Grand Elektronik)', 'JL Pluit Permai Raya No. 18 C, RT 002 RW.004, Pluit - Penjaringan Jakarta Utara', '', '021 - 6684826, 6626652, 6627282, 6627304', '', '', 'DKI Jakarta', 'Jakarta Utara', '', '-6.1155610', '106.7888440', NULL, 'dealer', 5),
-(22, 0, 'PT. Berca Carrier Indonesia (JKT-SC)', 'Jl. Agung Timur II Blok O No. 40-41, Sunter, Jakarta 14350', '', '021-26608088', '', '', 'DKI Jakarta', 'Jakarta', '', '-6.1311320', '106.8987500', NULL, 'asp', 401),
-(23, 0, 'Vida Air* (JKT-ASP-VDR)', 'Jl. Kemuning No. 67, Tomang, Jakarta 11440', '', '021-80681341, 083815001100', '', '', 'DKI Jakarta', 'Jakarta Barat', '', '-6.1232430', '106.9081690', NULL, 'asp', 406),
-(24, 0, 'CV. Jumadi Inti Teknik (BTN-ASP-JIT)', 'Green Lake City Rukan CBD Blok M 33, Gondrong, Tangerang 15146', '', '021-22052969, 087780700014', '', '', 'Banten', 'Tangerang', '', '-6.2252540', '106.9068690', NULL, 'asp', 411),
-(25, 0, 'Berkat Service (BTN-ASP-BTS)', 'Perum Villa Taman Bandara Blok B1 No. 10, Jl.Raya Perancis Dadap, Tangerang', '', '08118702832, 021-55961152/98226924/70283268/95016070', '', '', 'Banten', 'Tangerang', '', '-6.0920650', '106.6988340', NULL, 'asp', 416),
-(26, 0, 'CV. Lintas Teknik (JWB-ASP-CLT)', 'Jl. Bintara 4 No. 5 RT. 02/16, Bintara, Bekasi Barat', '', '021-29485981', '', '', 'Jawa Barat', 'Bekasi', '', '-6.2232890', '106.9509000', NULL, 'asp', 421),
-(27, 0, 'Anugrah Service (JWB-ASP-ANS)', 'Jl. Raya Cilendek No. 28, Cemplang Baru, Bogor', '', '0251-7539400/081314611100', '', '', 'Jawa Barat', 'Bogor', '', '-6.5686350', '106.7658930', NULL, 'asp', 426),
-(28, 0, 'Mandiri Jaya Electronics (JWB-ASP-MJE)', 'Jl. Proklamasi Blok E No. 11 RT. 02/23, Kel. Abadijaya, Kec. Sukmajaya, Depok ', '', '021-77827663/92168349/94066940/93238276', '', '', 'Jawa Barat', 'Depok', '', '-6.3963580', '106.8430440', NULL, 'asp', 431),
-(29, 0, 'YS Service (JWB-ASP-YSS)', 'Kp. Marga Mulya RT. 01/05 Kavling, Kel. Marga Mulya, Kec. Kota Baru Cikampek 41361', '', '0264-7001253', '', '', 'Jawa Barat', 'Cikampek', '', '-6.4178130', '107.4762030', NULL, 'asp', 436),
-(30, 0, 'Mandiri Jaya Electronics (JWB-ASP-MJE)', 'Jl. Jendral Amir Mahmud / Raya Cibabat No. 351, Cimahi, Jawa Barat ', '', '022-70097199/93871789', '', '', 'Jawa Barat', 'Cimahi', '', '-6.8872300', '107.5549510', NULL, 'asp', 441),
-(31, 0, 'CV. Sinar Teknindo Perkasa  (JWB-ASP-STP)', 'Perum Griya Mas Lestari Blok B-4 No. 2 RT. 38/09, Pondang Jaya, Klari, Karawang ', '', '0267–8635904/7011191/085119902225', '', '', 'Jawa Barat', 'Karawang', '', '-6.3288940', '107.3379060', NULL, 'asp', 446),
-(32, 0, 'Mandiri Jaya Electronics (JWB-ASP-MJE)', 'Jl. Raya Sadang Subang No. 11 RT. 04/02, Kec. Campaka, Purwakarta', '', '0264-9114355', '', '', 'Jawa Barat', 'Purwakarta', '', '-6.5204240', '107.4587700', NULL, 'asp', 451),
-(33, 0, 'Abie Anugerah Service (JWB-ASP-ANS)', 'Jl. Jaksa Ii No. 09 D, Sukamelang, Subang 41251', '', '0260-421962', '', '', 'Jawa Barat', 'Subang', '', '-6.5515360', '107.7732130', NULL, 'asp', 456),
-(34, 0, 'YS Service (JWB-ASP-YSS)', 'Jl. Raya Tanjung Wangi No. 184 RT. 04/02, Kec. Cijambe, Subang 41372', '', '0260-422348/08882223949', '', '', 'Jawa Barat', 'Subang', '', '-6.5970660', '107.7344770', NULL, 'asp', 461),
-(35, 0, 'Bhayangkara Service (JWB-ASP-BHS)', 'Jl. Bhayangkara No. 72, Sukabumi, Jawa Barat', '', '0266-223622/081563275011/081381049409', '', '', 'Jawa Barat', 'Sukabumi', '', '-6.9186480', '106.9161820', NULL, 'asp', 466),
-(36, 0, 'Electronics 99 (JWB-ASP-E99)', 'Jl. KH. Mustofa No. 345, Tasik Indah Plaza No. 10, Tasikmalaya 46115', '', '0265-345035/085223456699', '', '', 'Jawa Barat', 'Tasikmalaya', '', '-7.3451390', '108.2179150', NULL, 'asp', 471),
-(37, 0, 'Dadi Electronic (JWT-ASP-DDE)', 'Jl. Kuta Banjarnegara RT. 01/02, Banjar Negara 53414', '', '0286-592254/591792/592256', '', '', 'Jawa Tengah', 'Banjarnegara', '', '-7.3978150', '123456.0000000', NULL, 'asp', 476),
-(38, 0, 'Surya Kencana Elektronik (JWT-ASP-SKE)', 'Jl. Lesanpura RT. 05/02, Ruko Fajar No. 1, Teluk Purwokerto Selatan, Kab. Banyumas 53145', '', '0851 0161 4414 / 0813 2741 3344 / 0816 6945 70', '', '', 'Jawa Tengah', 'Banyumas', '', '-7.4320830', '109.2477340', NULL, 'asp', 481),
-(39, 0, 'CV. Kadang Bayu (JWT-ASP-CKB)', 'Jl. Gatot Subroto Km. 1, Blora 58213', '', '08112708133, 0296-532761', '', '', 'Jawa Tengah', 'Blora', '', '-6.9691280', '111.3971820', NULL, 'asp', 486),
-(40, 0, 'Surya Kencana Elektronik (JWT-ASP-SKE)', 'Jl. Rinjani No. 233, Cilacap', '', '08164280209', '', '', 'Jawa Tengah', 'Cilacap', '', '-7.6687320', '109.0743810', NULL, 'asp', 491),
-(41, 0, 'Mekar Jaya Tehnik (JWT-ASP-MJT)', 'Ds. Kedung Waringin RT. 01/ 02, Kec. Patikreja, Kab. Banyumas, Purwokerto 53171', '', '0281-5140330 ', '', '', 'Jawa Tengah', 'Cirebon', '', '-7.4254710', '109.2509230', NULL, 'asp', 496),
-(42, 0, 'CV. Kadang Bayu (JWT-ASP-CKB)', 'Ds. Sowan Kidul RT. 05/03, Kedung, Jepara 59463', '', '08122509384', '', '', 'Jawa Tengah', 'Jepara', '', '-7.0207030', '110.4106910', NULL, 'asp', 501),
-(43, 0, 'CV. Kadang Bayu (JWT-ASP-CKB)', 'Jl. Raya Kudus Pati Km. 14, Kudus', '', '081325225077', '', '', 'Jawa Tengah', 'Kudus', '', '-6.8052910', '110.9076930', NULL, 'asp', 506),
-(44, 0, 'CV. Kadang Bayu (JWT-ASP-CKB)', 'Jl. Raya Secang No. 69, Magelang 56195', '', '0293-5532001/5562299', '', '', 'Jawa Tengah', 'Magelang', '', '-7.3985430', '110.2428010', NULL, 'asp', 511),
-(45, 0, 'CV. Kadang Bayu (JWT-ASP-CKB)', 'Jl. Urip Sumoharjo No. 22, Pekalongan', '', '0285-7863550', '', '', 'Jawa Tengah', 'Pekalongan', '', '-6.9015570', '109.6647120', NULL, 'asp', 516),
-(46, 0, 'MAS Servis (JWT-ASP-MAS)', 'Jl. Sunan Bonan RT. 05/05, Dukuh Waluh, Purwokerto, Jawa Tengah', '', '0281 – 6843635', '', '', 'Jawa Tengah', 'Purwokerto', '', '-7.4023790', '109.2664020', NULL, 'asp', 521),
-(47, 0, 'Purnama Jaya Service (JWT-ASP-PJS)', 'Jl. WR Supratman RT. 01/01 Tambakrejo, Purworejo 54118', '', '082137497356', '', '', 'Jawa Tengah', 'Purworejo', '', '-7.7174930', '110.0221080', NULL, 'asp', 526),
-(48, 0, 'CV. Kadang Bayu (JWT-ASP-CKB)', 'Jl. Leli Blok C No. 304 Perum Diponegoro Tembalang, Semarang', '', '024- 8506755, 081802440077, 024-74013987, 024-8507494', '', '', 'Jawa Tengah', 'Semarang', '', '-7.0426280', '110.4420570', NULL, 'asp', 531),
-(49, 0, 'Purnama Jaya Service (JWT-ASP-PJS)', 'Jl. Tentara Pelajar Trimulyo I Kepek Wonosari Gunung  Kidul (Depan Toko Setya Baru)', '', '0816215843', '', '', 'Jawa Tengah', 'Wonosari', '', '-7.9690080', '110.6167100', NULL, 'asp', 536),
-(50, 0, 'Purnama Jaya Service (JWT-ASP-PJS)', 'Jl. Ringroad Utara No. 265A, Gorongan, Condongcatur, Yogyakarta 55283', '', '0274-486123/489192/9190090', '', '', 'Yogyakarta', 'Yogyakarta', '', '-7.7595740', '110.4045750', NULL, 'asp', 541),
-(51, 0, 'Purnama Jaya Service (JWT-ASP-PJS)', 'Jl. KH. Ahmad Dahlan No. 23, Badegan Tengah Bantul Yogjakarta', '', '0816215842', '', '', 'Yogyakarta', 'Bantul', '', '-7.8897510', '110.3300510', NULL, 'asp', 546),
-(52, 0, 'UD. Wandira Service (JWT-ASP-WDS)', 'Jl. Ikan Cucut No. 44, Banyuwangi, Jawa Timur 68413', '', '0333-423417', '', '', 'Jawa Timur', 'Banyuwangi', '', '-8.2106780', '114.3798400', NULL, 'asp', 551),
-(53, 0, 'Duta Bina Teknik (JWT-ASP-DBT)', 'Jl. Panglima Sudirman No. 08, Gresik', '', '031-3981616/031-71992192 ', '', '', 'Jawa Timur', 'Gresik', '', '-7.1637270', '112.6549630', NULL, 'asp', 556),
-(54, 0, 'Lumajang Electronic Service (JWT-ASP-LES)', 'Jl. Kapten Kyai Ilyas No.140, Lumajang ', '', '0334-885378', '', '', 'Jawa Timur', 'Lumajang', '', '-8.1318080', '113.2162310', NULL, 'asp', 561),
-(55, 0, 'Windra Service (JWT-ASP-WNS)', 'Jl. Lio Sudarmo No. 49, Malang ', '', '0341-485976', '', '', 'Jawa Timur', 'Malang', '', '-8.1846850', '113.7067760', NULL, 'asp', 566),
-(56, 0, 'Jimmy Elektronik (JWT-ASP-JME)', 'Jl. Raya Panglima Soedirman No. 368, Probolinggo-Mayangan 67218', '', '0335-435383, 08166595388', '', '', 'Jawa Timur', 'Probolinggo', '', '-7.7588570', '113.2284240', NULL, 'asp', 571),
-(57, 0, 'PT. Toscar Perkasa Indonesia (SBY-ASD)', 'Komp. Perkantoran Permata 1 Blok B-9, Jl. Mayjen HR Mohammad Kav. 360-380', '', '031-7342189', '', '', 'Jawa Timur', 'Surabaya', '', '-7.2825610', '112.6863710', NULL, 'asp', 576),
-(58, 0, 'PT. Dynami Perkasa Indonesia (BLI-ASD)', 'Komp. Perkantoran Sunset Indah II Blok B-3A, Jl. Sunset Road B-3A, Kuta, Bali 80361', '', '0361-751691', '', '', 'Bali', 'Denpasar', '', '-8.7151510', '115.1867220', NULL, 'asp', 581),
-(59, 0, 'CV. Sanjaya Karma (BLI-ASP-SJK)', 'Jl. Gunung Abang No. 1, Monang-Maning, Denpasar, Bali 80119', '', '0361-484473/0361-8806750', '', '', 'Bali', 'Denpasar', '', '-8.6378590', '115.2014740', NULL, 'asp', 586),
-(60, 0, 'Stema Service (ACH-ASP-STM)', 'Jl. Aceh-Medan No. 1, Kuta Blang, Bireun 24300', '', '0644-7010434', '', '', 'Aceh', 'Bireun', '', '5.2114740', '96.8334640', NULL, 'asp', 591),
-(61, 0, 'Duta Com (ACH-ASP-DTC)', 'Jl. DI.Panjaitan No. 29, Kec. Kuala Simpang, Kab. Aceh Tamiang. Aceh 24475', '', '0641-333566/085262953995', '', '', 'Aceh', 'Tamiang', '', '5.5621290', '95.3253460', NULL, 'asp', 596),
-(62, 0, 'PT. Seltech Utama Mandiri (MDN-ASD)', 'Jl. Sisingamangaraja XII Km. 7,2 No. 170, Medan', '', '061-7862123', '', '', 'Sumatera Utara', 'Medan', '', '3.5600770', '98.6940990', NULL, 'asp', 601),
-(63, 0, 'Arya Tehnik (SMU-ASP-ART)', 'Jl. Protokol Dusun 1 Sei Bamban Km. 65, Kab. Serdang Bedagai 20995', '', '085297800172/085261721515', '', '', 'Sumatera Utara', 'Serdang Bedagai', '', '3.5018230', '99.1164120', NULL, 'asp', 606),
-(64, 0, 'PT. Terima Karya (SMB-ASP-TRK)', 'Simpang Bawah Patai No. 16 RT. 03/01, Kel. Indarung, Padang 25231', '', '0751-777758 / 085278239378', '', '', 'Sumatera Barat', 'Padang', '', '-7.3733540', '112.7303290', NULL, 'asp', 611),
-(65, 0, 'PT. Seltech Utama Karya (BTM-ASD)', 'Komp. Srijaya Abadi Blok J No. 3, Lubuk Baja, Batam', '', '062-778456168', '', '', 'Riau', 'Batam', '', '1.1423370', '104.0119810', NULL, 'asp', 616),
-(66, 0, 'Leo Service (PKB-ASP-LOS)', 'Jl. Nangka No. 70, Dumai Barat, Dumai', '', '08127504292', '', '', 'Riau', 'Dumai', '', '1.6755300', '101.4344120', NULL, 'asp', 621),
-(67, 0, 'Mandiri Teknik (PKB-ASP-MDT)', 'Jl. H. Guru Sulaiman, Gang Pribadi No. 24, Tampan, Pekanbaru', '', '081365558591', '', '', 'Riau', 'Pekanbaru', '', '0.5310330', '101.4277550', NULL, 'asp', 626),
-(68, 0, 'Pesona Teknik (JMB-ASP-PST)', 'Jl. Sultan Agung No. 23 RT. 09, Lrg. Telagal, Kel. Murni, Kec. Telanai Pura, Jambi', '', '081366014571', '', '', 'Jambi', 'Jambi', '', '-1.5969450', '103.6072060', NULL, 'asp', 631),
-(69, 0, 'Mode Teknik (BKU-ASP-MDT)', 'Komp. Ruko Depan Asrama Kompi 144, Jl. Zainul Arifin, Bengkulu 38221', '', '082184377829', '', '', 'Bengkulu', 'Bengkulu', '', '-3.8226450', '102.3092900', NULL, 'asp', 636),
-(70, 0, 'Utama Service  (LMP-ASP-UTS)', 'Jl. A. Prawira Negara No. 18A, Metro 41113', '', '0725-7850991', '', '', 'Lampung', 'Metro ', '', '-3.0021400', '104.7214270', NULL, 'asp', 641),
-(71, 0, 'AV Elektronik (LMP-ASP-AVE)', 'Jl. Jend. A. Yani No. 10, Samping Hotel Balong Kuring, Pringsewu Tanggamus, Lampung 35373', '', '0729-23817', '', '', 'Lampung', 'Pringsewu', '', '-5.3575010', '104.9864610', NULL, 'asp', 646),
-(72, 0, 'PT. Fath Jaya Lestari (BLP-ASD)', 'Jl. Pialing II Blok K1 No. 35, Damai, Balikpapan 76114', '', '0542-871400', '', '', 'Kalimantan Timur', 'Balikpapan', '', '-1.2457660', '116.8882550', NULL, 'asp', 651),
-(73, 0, 'PT Triaji Mandiri Teknika', 'Jl. Kincan Raya No.22, Jatibening Baru, Pondokgede, Kota Bks, Jawa Barat 17412', '', '(021) 86902459', '', '', 'Jawa Barat', 'Bekasi', '', '-6.2566740', '106.9426090', NULL, 'dealer', 25);
+(1, 0, 'Suzanna Baby Shop Kertajaya', 'Jl. Kertajaya No. 163-165 Surabaya 60286,', 'Indonesia', '(6231) 503-7884', '', '', 'Jawa Timur', 'Surabaya', '', '0.0000000', '0.0000000', '', 'dealer', 100),
+(2, 0, 'Suzanna Baby Shop HR Muhammad', 'Jl. Hr. Muhammad No. 59 Surabaya 60189, ', 'Indonesia', '(6231) 739-2001', '', '', 'Jawa Timur', 'Surabaya', '', '0.0000000', '0.0000000', '', 'dealer', 100),
+(3, 0, 'Suzanna Baby Shop Kelapa Gading', 'Jl. Kelapa Gading Boulevard K4/7-10', 'Jakarta Utara 14240, Indonesia', '(6221) 453-0840', '', '', 'DKI Jakarta', 'Jakarta', '', '0.0000000', '0.0000000', '', 'dealer', 100),
+(4, 0, 'Suzanna Baby Shop Pondok Indah', 'Jl. Metro Pondok Indah No. 33', 'Jakarta Selatan 12310, Indonesia', '(6221) 7590-0826', '', '', 'DKI Jakarta', 'Jakarta', '', '0.0000000', '0.0000000', '', 'dealer', 100),
+(5, 0, 'Suzanna Baby Shop Serpong', 'Ruko Golden Boulevard 1 Blok N1-15 Jl. Pahlawan Seribu,', 'Serpong Tangerang 15322, Indonesia', '(6221) 5316-1301', '', '', 'DKI Jakarta', 'Jakarta', '', '0.0000000', '0.0000000', '', 'dealer', 100),
+(6, 0, 'Suzanna Baby Shop Puri', 'Ruko Puri Britania T7/B30-35, Puri Indah ', 'Jakarta Barat 11610, Indonesia', '(6221) 5830-4816', '', '', 'DKI Jakarta', 'Jakarta', '', '0.0000000', '0.0000000', '', 'dealer', 100),
+(7, 0, 'Suzanna Baby Shop Lembong', 'Jl. Lembong No. 12-18', 'Bandung 40111, Indonesia', '(6222) 423-7511', '', '', 'Jawa Barat', 'Bandung', '', '0.0000000', '0.0000000', '', 'dealer', 100),
+(8, 0, 'Suzanna Baby Shop Medan', 'Jl. Sultan Iskandar Muda No. 25-27', 'Medan 20154, Indonesia', '(6261) 450-3533', '', '', 'Sumatera', 'Medan', '', '0.0000000', '0.0000000', '', 'dealer', 100),
+(9, 0, 'Suzanna Baby Shop Palembang', 'Jl. Diponegoro No. 19', 'Palembang 30135, Indonesia', '(62711) 573-2001', '', '', 'Sumatera', 'Palembang', '', '0.0000000', '0.0000000', '', 'dealer', 100);
 
 -- --------------------------------------------------------
 
@@ -805,10 +748,10 @@ CREATE TABLE `gal_gallery` (
 --
 
 INSERT INTO `gal_gallery` (`id`, `topik_id`, `image`, `active`, `date_input`, `date_update`, `insert_by`, `last_update_by`, `writer`, `city`, `harga`, `orientation`, `color`, `image2`, `product_id`) VALUES
-(6, 0, '46a1a-HOSE 1JK-NAVY-1 (1268x730).jpg', 1, '2017-02-22 22:33:00', '2018-12-07 15:37:25', 'deoryzpandu@gmail.com', 'info@markdesign.net', '', '', 0, 0, '', '', '4'),
-(9, 0, 'c1446-getsn_gall.jpg', 1, '2018-09-22 08:37:22', '2018-11-21 17:16:29', 'info@markdesign.net', 'info@markdesign.net', '', '', 0, 0, '', '', '5'),
-(10, 0, '728fb-getsn_gall.jpg', 1, '2018-11-21 17:16:49', '2018-11-21 17:16:59', 'info@markdesign.net', 'info@markdesign.net', '', '', 0, 0, '', '', '3'),
-(11, 0, 'b3d2b-HOSE 1JK-NAVY-1 (1268x730).jpg', 1, '2018-12-07 15:32:19', '2018-12-07 15:34:45', 'info@markdesign.net', 'info@markdesign.net', '', '', 0, 0, '', '', '11');
+(1, 0, '7684a-1.jpg', 1, '2019-08-20 14:47:11', '2019-08-20 14:47:50', 'info@markdesign.net', 'info@markdesign.net', '', '', 0, 0, '', '', '9'),
+(2, 0, 'f2584-1.jpg', 1, '2019-08-20 14:47:57', '2019-08-20 14:48:30', 'info@markdesign.net', 'info@markdesign.net', '', '', 0, 0, '', '', '6'),
+(3, 0, '38b17-1.jpg', 1, '2019-08-20 14:48:32', '2019-08-20 14:48:56', 'info@markdesign.net', 'info@markdesign.net', '', '', 0, 0, '', '', '8'),
+(4, 0, '37481-1.jpg', 1, '2019-08-20 14:48:59', '2019-08-20 14:49:28', 'info@markdesign.net', 'info@markdesign.net', '', '', 0, 0, '', '', '7');
 
 -- --------------------------------------------------------
 
@@ -831,17 +774,10 @@ CREATE TABLE `gal_gallery_description` (
 --
 
 INSERT INTO `gal_gallery_description` (`id`, `gallery_id`, `language_id`, `title`, `sub_title`, `sub_title_2`, `content`) VALUES
-(8, 1, 2, 'Connecting Souls', 'PRE WEDDING OF JAMES & HANNAH', '', '<p>\r\n	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat  eu magna id laoreet. Donec accumsan mauris congue consectetur congue.  Morbi rutrum ipsum nec ligula convallis viverra. Fusce vehicula  efficitur nisl in aliquam. Nullam non dictum ligula. Nunc in orci  viverra, consequat sapien ac, auctor erat. Sed rutrum tincidunt dictum.  Maecenas pharetra lobortis volutpat. Cras euismod ultricies nisl vitae  bibendum. Vestibulum eget lorem a sem aliquet mattis id sodales purus.  Praesent finibus aliquam laoreet. Vivamus vel tortor nec justo mattis  venenatis. Fusce varius tellus sit amet purus varius tempus.\r\n</p>\r\n<p>\r\n	    Donec enim lectus, condimentum a fermentum  eget, volutpat sit amet nisl. Nunc sit amet enim sagittis, congue nunc  id, euismod nulla. Nullam porttitor mi tortor, vitae vulputate leo  egestas vel. Pellentesque convallis vestibulum nisl pretium hendrerit.  Donec egestas, mauris ut molestie posuere, mauris mauris porta libero,  tristique imperdiet turpis nisl sed arcu. Quisque at augue non felis  facilisis semper ac a orci. Cras porta nulla consectetur arcu finibus  blandit. Mauris sodales, risus sit amet dictum cursus, orci lorem  egestas dui, maximus viverra tortor odio imperdiet quam. Donec placerat,  mi eu vestibulum luctus, augue metus consequat enim, varius accumsan  quam erat eleifend ante. Fusce porta ipsum vitae nibh interdum, vel  elementum odio aliquet. Ut dui tortor, convallis eget finibus vitae,  malesuada sed justo. Mauris tempor in nibh quis sodales.\r\n</p>'),
-(9, 2, 2, 'Connecting Souls', 'PRE WEDDING OF JAMES & HANNAH', '', '<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quaerat deserunt quod dignissimos consectetur id atque maxime at natus, ipsum. Eaque adipisci sit blanditiis error. Perspiciatis debitis ducimus doloribus odit animi doloremque dolore, laboriosam commodi voluptates nobis similique optio sunt.\r\n</p>\r\n<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic suscipit aperiam repellendus minima enim ipsa iure minus ab velit! At nam, ducimus blanditiis earum quis ad neque, voluptates aspernatur veritatis.\r\n</p>'),
-(60, 3, 2, 'Soon', '', 'WE ARE STILL COOKING', '<p>\r\n	              We still cooking for finding the best taste &amp; ingriedients, get ready for Realfit new variant soon.\r\n</p>'),
-(62, 4, 2, 'BARISTA WORSKHOP', 'SYDNEY, NSW', '', '<p>\r\n	               We still cooking for finding the best taste &amp; ingriedients, get ready for Realfit new variant soon.\r\n</p>'),
-(57, 5, 2, 'CLASSIC', 'Drink With Purpose', 'Bird\'s Nest Daily Drink', '<p>\r\n	                            Bird\'s Nest Daily drink with Classic variant. Low calories because sweetened with natural stevia leaves\r\n</p>'),
-(83, 10, 2, 'DDN21 Collection - The Urban Type 3', '', '', ''),
-(84, 11, 2, 'HOSE', '', '', ''),
-(74, 8, 2, 'New Product With Discount', 'Anda juga dapat menggunakan form online berikut untuk menyampaikan pesan anda. Staf layanan pelanggan Precise shoes akan segera merespon anda kembali.', '15 Juni - 9 July 2017', '<p>\r\n	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae  dolores labore explicabo, deserunt doloribus nulla delectus dignissimos  magni repellendus, officia.\r\n</p>\r\n<p>\r\n	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae  dolores labore explicabo, deserunt doloribus nulla delectus dignissimos  magni repellendus, officia.\r\n</p>\r\n<p>\r\n	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae  dolores labore explicabo, deserunt doloribus nulla delectus dignissimos  magni repellendus, officia.\r\n</p>\r\n<p>\r\n	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae  dolores labore explicabo, deserunt doloribus nulla delectus dignissimos  magni repellendus, officia.\r\n</p>'),
-(73, 7, 2, 'Murah Hemat Tetep Gaya', 'Anda juga dapat menggunakan form online berikut untuk menyampaikan pesan anda. Staf layanan pelanggan Precise shoes akan segera merespon anda kembali.', '15 Juni - 9 July 2017', '<p>\r\n	     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae  dolores labore explicabo, deserunt doloribus nulla delectus dignissimos  magni repellendus, officia.\r\n</p>\r\n<p>\r\n	     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae  dolores labore explicabo, deserunt doloribus nulla delectus dignissimos  magni repellendus, officia.\r\n</p>\r\n<p>\r\n	     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae  dolores labore explicabo, deserunt doloribus nulla delectus dignissimos  magni repellendus, officia.\r\n</p>\r\n<p>\r\n	     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae  dolores labore explicabo, deserunt doloribus nulla delectus dignissimos  magni repellendus, officia.\r\n</p>'),
-(81, 9, 2, 'DDN21 Collection - The Urban Type 2', '', '', ''),
-(85, 6, 2, 'DDN21 Collection - The Urban Type ', '', '', '');
+(1, 1, 2, 'Galery Baby Gee', '', '', ''),
+(2, 2, 2, 'Galery Brevi', '', '', ''),
+(3, 3, 2, 'Galery Cam', '', '', ''),
+(4, 4, 2, 'Galery Royal Baby', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -860,12 +796,21 @@ CREATE TABLE `gal_gallery_image` (
 --
 
 INSERT INTO `gal_gallery_image` (`id`, `gallery_id`, `image`) VALUES
-(24, 1, '5a715-Bombay pre wedding shoot.jpg'),
-(22, 1, '5a715-37b9e4e8-f39f-4e8d-b53a-0b43c2d632c7.jpg'),
-(23, 1, '5a715-6815400-wedding-wallpaper.jpg'),
-(25, 2, 'e4a80-Bombay pre wedding shoot.jpg'),
-(26, 2, 'e4a80-PuChai-Prewedding-retouches-4.jpg'),
-(27, 2, 'e4a80-PuChai-Prewedding-retouches-10.jpg');
+(1, 1, '7684a-2.jpg'),
+(2, 1, '7684a-3.jpg'),
+(3, 1, '7684a-4.jpg'),
+(4, 1, '7684a-5.jpg'),
+(5, 2, 'f2584-2.jpg'),
+(6, 2, 'f2584-3.jpg'),
+(7, 2, 'f2584-4.jpg'),
+(8, 2, 'f2584-5.jpg'),
+(9, 3, '38b17-2.jpg'),
+(10, 3, '38b17-3.jpg'),
+(11, 3, '38b17-4.jpg'),
+(12, 4, '37481-2.jpg'),
+(13, 4, '37481-3.jpg'),
+(14, 4, '37481-4.jpg'),
+(15, 4, '37481-5.jpg');
 
 -- --------------------------------------------------------
 
@@ -1280,7 +1225,60 @@ INSERT INTO `log` (`id`, `username`, `activity`, `time`) VALUES
 (322, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-08-19 08:14:44'),
 (323, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-08-19 09:58:33'),
 (324, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-08-19 10:02:49'),
-(325, 'info@markdesign.net', 'Setting Update', '2019-08-19 10:03:05');
+(325, 'info@markdesign.net', 'Setting Update', '2019-08-19 10:03:05'),
+(326, 'info@markdesign.net', 'Setting Update', '2019-08-19 10:05:57'),
+(327, 'info@markdesign.net', 'Setting Update', '2019-08-19 10:09:28'),
+(328, 'info@markdesign.net', 'Setting Update', '2019-08-19 10:11:29'),
+(329, 'info@markdesign.net', 'Setting Update', '2019-08-19 10:12:09'),
+(330, 'info@markdesign.net', 'Setting Update', '2019-08-19 10:15:44'),
+(331, 'info@markdesign.net', 'Create Category 1', '2019-08-19 10:16:23'),
+(332, 'info@markdesign.net', 'Create Category 2', '2019-08-19 10:16:29'),
+(333, 'info@markdesign.net', 'Create Category 3', '2019-08-19 10:16:37'),
+(334, 'info@markdesign.net', 'Create Category 4', '2019-08-19 10:16:41'),
+(335, 'info@markdesign.net', 'Create Category 5', '2019-08-19 10:18:45'),
+(336, 'info@markdesign.net', 'Create Category 6', '2019-08-19 10:18:51'),
+(337, 'info@markdesign.net', 'Create Category 7', '2019-08-19 10:18:58'),
+(338, 'info@markdesign.net', 'Create Category 8', '2019-08-19 10:19:02'),
+(339, 'info@markdesign.net', 'Create Category 9', '2019-08-19 10:19:05'),
+(340, 'info@markdesign.net', 'Brand Controller Create 1', '2019-08-19 10:33:26'),
+(341, 'info@markdesign.net', 'Brand Controller Create 2', '2019-08-19 10:33:48'),
+(342, 'info@markdesign.net', 'Brand Controller Create 3', '2019-08-19 10:34:01'),
+(343, 'info@markdesign.net', 'Brand Controller Create 4', '2019-08-19 10:34:17'),
+(344, 'info@markdesign.net', 'Brand Controller Create 5', '2019-08-19 10:34:30'),
+(345, 'info@markdesign.net', 'Brand Controller Create 6', '2019-08-19 10:34:44'),
+(346, 'info@markdesign.net', 'Brand Controller Create 7', '2019-08-19 10:35:00'),
+(347, 'info@markdesign.net', 'Brand Controller Create 8', '2019-08-19 10:35:15'),
+(348, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-08-20 03:41:32'),
+(349, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-08-20 03:47:02'),
+(350, 'info@markdesign.net', 'Slide Controller Create 1', '2019-08-20 03:48:43'),
+(351, 'info@markdesign.net', 'Setting Update', '2019-08-20 04:59:15'),
+(352, 'info@markdesign.net', 'Address Controller Create 1', '2019-08-20 05:07:25'),
+(353, 'info@markdesign.net', 'Address Controller Create 2', '2019-08-20 05:08:07'),
+(354, 'info@markdesign.net', 'Address Controller Create 3', '2019-08-20 07:37:57'),
+(355, 'info@markdesign.net', 'Address Controller Create 4', '2019-08-20 07:42:34'),
+(356, 'info@markdesign.net', 'Address Controller Create 5', '2019-08-20 07:43:21'),
+(357, 'info@markdesign.net', 'Address Controller Create 6', '2019-08-20 07:44:08'),
+(358, 'info@markdesign.net', 'Address Controller Create 7', '2019-08-20 07:44:43'),
+(359, 'info@markdesign.net', 'Address Controller Create 8', '2019-08-20 07:45:28'),
+(360, 'info@markdesign.net', 'Address Controller Create 9', '2019-08-20 07:46:06'),
+(361, 'info@markdesign.net', 'Gallery Controller Create 1', '2019-08-20 07:47:50'),
+(362, 'info@markdesign.net', 'Gallery Controller Create 2', '2019-08-20 07:48:30'),
+(363, 'info@markdesign.net', 'Gallery Controller Create 3', '2019-08-20 07:48:56'),
+(364, 'info@markdesign.net', 'Gallery Controller Create 4', '2019-08-20 07:49:28'),
+(365, 'info@markdesign.net', 'Setting Update', '2019-08-20 08:01:36'),
+(366, 'info@markdesign.net', 'Setting Update', '2019-08-20 08:02:18'),
+(367, 'info@markdesign.net', 'Create Category 6', '2019-08-20 08:05:09'),
+(368, 'info@markdesign.net', 'Create Category 7', '2019-08-20 08:05:42'),
+(369, 'info@markdesign.net', 'Create Category 8', '2019-08-20 08:05:49'),
+(370, 'info@markdesign.net', 'Create Category 9', '2019-08-20 08:06:01'),
+(371, 'info@markdesign.net', 'Setting Update', '2019-08-20 08:42:07'),
+(372, 'info@markdesign.net', 'Setting Update', '2019-08-20 08:45:16'),
+(373, 'info@markdesign.net', 'Setting Update', '2019-08-20 08:55:04'),
+(374, 'info@markdesign.net', 'Setting Update', '2019-08-20 09:04:58'),
+(375, 'info@markdesign.net', 'Create Category 6', '2019-08-20 09:15:10'),
+(376, 'info@markdesign.net', 'Create Category 7', '2019-08-20 09:15:16'),
+(377, 'info@markdesign.net', 'Create Category 8', '2019-08-20 09:15:19'),
+(378, 'info@markdesign.net', 'Create Category 9', '2019-08-20 09:15:25');
 
 -- --------------------------------------------------------
 
@@ -1803,6 +1801,20 @@ CREATE TABLE `prd_brand` (
   `last_update_by` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `prd_brand`
+--
+
+INSERT INTO `prd_brand` (`id`, `kode`, `image`, `active`, `date_input`, `date_update`, `insert_by`, `last_update_by`) VALUES
+(1, '', 'fffea-nuby.jpg', 1, '2019-08-19 17:33:26', '2019-08-19 17:33:26', 'info@markdesign.net', 'info@markdesign.net'),
+(2, '', 'ad1e9-johnsons.jpg', 1, '2019-08-19 17:33:48', '2019-08-19 17:33:48', 'info@markdesign.net', 'info@markdesign.net'),
+(3, '', 'a7619-elegance.jpg', 1, '2019-08-19 17:34:01', '2019-08-19 17:34:01', 'info@markdesign.net', 'info@markdesign.net'),
+(4, '', 'e10f0-kuku.jpg', 1, '2019-08-19 17:34:17', '2019-08-19 17:34:17', 'info@markdesign.net', 'info@markdesign.net'),
+(5, '', 'bb417-dialogue.jpg', 1, '2019-08-19 17:34:30', '2019-08-19 17:34:30', 'info@markdesign.net', 'info@markdesign.net'),
+(6, '', 'dfde3-nepia.jpg', 1, '2019-08-19 17:34:44', '2019-08-19 17:34:44', 'info@markdesign.net', 'info@markdesign.net'),
+(7, '', '1d662-scots.jpg', 1, '2019-08-19 17:35:00', '2019-08-19 17:35:00', 'info@markdesign.net', 'info@markdesign.net'),
+(8, '', 'ac7eb-keaide.jpg', 1, '2019-08-19 17:35:15', '2019-08-19 17:35:15', 'info@markdesign.net', 'info@markdesign.net');
+
 -- --------------------------------------------------------
 
 --
@@ -1816,6 +1828,20 @@ CREATE TABLE `prd_brand_description` (
   `title` varchar(255) NOT NULL,
   `content` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `prd_brand_description`
+--
+
+INSERT INTO `prd_brand_description` (`id`, `brand_id`, `language_id`, `title`, `content`) VALUES
+(1, 1, 2, 'NUBY', ''),
+(2, 2, 2, 'JOHNSONS', ''),
+(3, 3, 2, 'ELEGANCE', ''),
+(4, 4, 2, 'KUKU DUCKBILL', ''),
+(5, 5, 2, 'DIALOGUE', ''),
+(6, 6, 2, 'NEPIA', ''),
+(7, 7, 2, 'BABY SCOTS', ''),
+(8, 8, 2, 'KEAIDE BIDDY', '');
 
 -- --------------------------------------------------------
 
@@ -1834,6 +1860,16 @@ CREATE TABLE `prd_category` (
   `data` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `prd_category`
+--
+
+INSERT INTO `prd_category` (`id`, `parent_id`, `sort`, `image`, `image2`, `image3`, `type`, `data`) VALUES
+(9, 0, 4, 'f0f18-gee.png', '', '', 'category', ''),
+(8, 0, 3, '35403-cam.png', '', '', 'category', ''),
+(7, 0, 2, 'ad1cc-royal.png', '', '', 'category', ''),
+(6, 0, 1, '12ed2-brevi.png', '', '', 'category', '');
+
 -- --------------------------------------------------------
 
 --
@@ -1848,6 +1884,21 @@ CREATE TABLE `prd_category_description` (
   `desc` text NOT NULL,
   `data` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `prd_category_description`
+--
+
+INSERT INTO `prd_category_description` (`id`, `category_id`, `language_id`, `name`, `desc`, `data`) VALUES
+(1, 1, 2, 'Brevi', '', ''),
+(2, 2, 2, 'Royal Baby', '', ''),
+(3, 3, 2, 'Cam', '', ''),
+(4, 4, 2, 'Baby Gee', '', ''),
+(5, 5, 2, 'brevi', '', ''),
+(14, 6, 2, 'Brevi', 'Since 1999, our compassionate and comitted founders have advanced our mission: to bring modern smart products and promote exclusive quality products to every mother and baby in Indonesia. We brought impact to the early stages of maternity and life birth of a baby, both physically and emotionally.', ''),
+(15, 7, 2, 'Royal Baby', 'Since 1999, our compassionate and comitted founders have advanced our mission: to bring modern smart products and promote exclusive quality products to every mother and baby in Indonesia. We brought impact to the early stages of maternity and life birth of a baby, both physically and emotionally.', ''),
+(16, 8, 2, 'Cam', 'Since 1999, our compassionate and comitted founders have advanced our mission: to bring modern smart products and promote exclusive quality products to every mother and baby in Indonesia. We brought impact to the early stages of maternity and life birth of a baby, both physically and emotionally.', ''),
+(17, 9, 2, 'Baby Gee', 'Since 1999, our compassionate and comitted founders have advanced our mission: to bring modern smart products and promote exclusive quality products to every mother and baby in Indonesia. We brought impact to the early stages of maternity and life birth of a baby, both physically and emotionally.', '');
 
 -- --------------------------------------------------------
 
@@ -2136,17 +2187,17 @@ INSERT INTO `setting` (`id`, `name`, `label`, `value`, `type`, `hide`, `group`, 
 (74, 'home_sect3_store_value', 'Store Values', '10', 'text', 0, 'data', 'n', 0),
 (75, 'home_sect3_human_value', 'Human Values', '250', 'text', 0, 'data', 'n', 0),
 (76, 'home_sect3_brands_value', 'Brands Values', '750', 'text', 0, 'data', 'n', 0),
-(77, 'home_sect3_productSku_value', 'Products SKU Values', '35,000', 'text', 0, 'data', 'n', 0),
-(78, 'about_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(77, 'home_sect3_productSku_value', 'Products SKU Values', '35000', 'text', 0, 'data', 'n', 0),
+(78, 'about_hero_image', 'Image', '58c7981f7eLayer-37.jpg', 'image', 0, 'data', 'n', 0),
 (79, 'about_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (80, 'about_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
 (81, 'about1_content', 'Content', '', 'text', 0, 'data', 'y', 0),
 (82, 'about2_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(83, 'about2_pictures_banner', 'Picture Banner', '', 'image', 0, 'data', 'n', 0),
+(83, 'about2_pictures_banner', 'Picture Banner', '4a5bb3aa75about.png', 'image', 0, 'data', 'n', 0),
 (84, 'about3_vision_content', 'Content Top Vision', '', 'text', 0, 'data', 'y', 0),
 (85, 'about3_visi', 'Content Vision', '', 'text', 0, 'data', 'y', 0),
 (86, 'about3_misi', 'Content Mission', '', 'text', 0, 'data', 'y', 0),
-(87, 'about3_pictures_banner_middle', 'Picture Banner', '', 'image', 0, 'data', 'n', 0),
+(87, 'about3_pictures_banner_middle', 'Picture Banner', 'aab7022b87vission.png', 'image', 0, 'data', 'n', 0),
 (88, 'merek_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
 (89, 'merek_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (90, 'merek_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
@@ -2155,12 +2206,12 @@ INSERT INTO `setting` (`id`, `name`, `label`, `value`, `type`, `hide`, `group`, 
 (93, 'merk3_picture', 'Picture', '', 'image', 0, 'data', 'n', 0),
 (94, 'merk3_sub_title', 'Content', '', 'text', 0, 'data', 'y', 0),
 (95, 'merk3_sub_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(96, 'product_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(96, 'product_hero_image', 'Image', '48bc025802Layer-37.jpg', 'image', 0, 'data', 'n', 0),
 (97, 'product_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (98, 'product_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
 (99, 'products_brand_ncontent', 'Content', '', 'text', 0, 'data', 'y', 0),
 (100, 'products_topbrand_ncontent', 'Content Brands', '', 'text', 0, 'data', 'y', 0),
-(101, 'partner_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(101, 'partner_hero_image', 'Image', '44aaf05a34Layer-37.jpg', 'image', 0, 'data', 'n', 0),
 (102, 'partner_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (103, 'partner_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
 (104, 'partner_content', 'Content', '', 'text', 0, 'data', 'y', 0),
@@ -2168,22 +2219,22 @@ INSERT INTO `setting` (`id`, `name`, `label`, `value`, `type`, `hide`, `group`, 
 (106, 'partner_principals_content', 'Content Principal', '', 'text', 0, 'data', 'y', 0),
 (107, 'partner_agents_title', 'Titles Agents', '', 'text', 0, 'data', 'y', 0),
 (108, 'partner_agents_content', 'Content Agents', '', 'text', 0, 'data', 'y', 0),
-(109, 'partners2_picture_banners', 'Picture Banner', '', 'image', 0, 'data', 'n', 0),
-(110, 'store_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(109, 'partners2_picture_banners', 'Picture Banner', '40ed2b25c6partnership.png', 'image', 0, 'data', 'n', 0),
+(110, 'store_hero_image', 'Image', '08fd7823cbLayer-37.jpg', 'image', 0, 'data', 'n', 0),
 (111, 'store_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (112, 'store_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
 (113, 'store_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(114, 'contact_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(114, 'contact_hero_image', 'Image', 'd9cf3a5218Layer-37.jpg', 'image', 0, 'data', 'n', 0),
 (115, 'contact_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (116, 'contact_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
 (117, 'contact_content', 'Content', '', 'text', 0, 'data', 'y', 0),
 (118, 'contact_address', 'Content Address', '', 'text', 0, 'data', 'y', 0),
 (119, 'contact_topcontacts', 'Content Top Contacts', '', 'text', 0, 'data', 'y', 0),
-(120, 'contact_phone', 'Phone', '', 'text', 0, 'data', 'n', 0),
-(121, 'contact_wa', 'Whatsapp', '', 'text', 0, 'data', 'n', 0),
-(122, 'contact_email', 'Form Email', '', 'text', 0, 'data', 'n', 0),
-(123, 'url_facebook', 'URL Facebook', '', 'text', 0, 'data', 'n', 0),
-(124, 'url_instagram', 'URL Instagram', '', 'text', 0, 'data', 'n', 0),
+(120, 'contact_phone', 'Phone', '081 650 3636', 'text', 0, 'data', 'n', 0),
+(121, 'contact_wa', 'Whatsapp', '081 650 3636', 'text', 0, 'data', 'n', 0),
+(122, 'contact_email', 'Form Email', 'info@suzannababyshop.com', 'text', 0, 'data', 'n', 0),
+(123, 'url_facebook', 'URL Facebook', 'http://192.168.1.2/suzanna/home/contact#', 'text', 0, 'data', 'n', 0),
+(124, 'url_instagram', 'URL Instagram', 'http://192.168.1.2/suzanna/home/contact#', 'text', 0, 'data', 'n', 0),
 (125, 'contact_top_form_titles', 'Contact Titles Form', '', 'text', 0, 'data', 'y', 0),
 (126, 'contact_top_form_subtitles', 'Contact Info Form', '', 'text', 0, 'data', 'y', 0);
 
@@ -2205,12 +2256,40 @@ CREATE TABLE `setting_description` (
 --
 
 INSERT INTO `setting_description` (`id`, `setting_id`, `language_id`, `value`) VALUES
-(1, 60, 2, 'Never Stop Caring For The Mother & Baby \r\nIn Indonesia'),
+(1, 60, 2, 'Never Stop Caring For The Mother & Baby\r\nIn Indonesia'),
 (2, 61, 2, '<p>At Suzanna baby shop, we offer range of quality exclusive products to help mothers finding the right and the best mother & baby products as well as and mothers & babies fashion products. We\'re committed to provide the most safe, innovative and stylish products available.\r\n</p>'),
 (3, 62, 2, 'Our Product'),
 (4, 66, 2, 'More About Us'),
 (5, 68, 2, 'The Suzanna Story'),
-(6, 69, 2, '<p>Since 1999, our compassionate and comitted founders have advanced our mission: to bring modern smart products and promote exclusive quality products to every mother and baby in Indonesia. We brought impact to the early stages of maternity and life birth of a baby, both physically and emotionally. With over 10 branch of our store in Indonesia, we are a trusted partner to both the families in Indonesia as well as the mother and baby products manufacturer from all over the world.\r\n</p>');
+(6, 69, 2, '<p>Since 1999, our compassionate and comitted founders have advanced our mission: to bring modern smart products and promote exclusive quality products to every mother and baby in Indonesia. We brought impact to the early stages of maternity and life birth of a baby, both physically and emotionally. With over 10 branch of our store in Indonesia, we are a trusted partner to both the families in Indonesia as well as the mother and baby products manufacturer from all over the world.\r\n</p>'),
+(7, 79, 2, 'About Us'),
+(8, 80, 2, 'Our Background'),
+(9, 81, 2, '<h3>Suzanna Baby Shop is first established in 1999 in city of Surabaya, Indonesia. This establishment as the result of an initiative to create chain retail stores that really focus on selling products for baby, toddler and kid. Running as a family business for 20 years, at the moment Suzanna Baby Shop is one of the Indonesia’s leading chain retail stores in baby and kid industry.</h3><p>Widespread in 5 major cities in Indonesia, the country that has 250 million people, Suzanna Baby Shop has consolidated its presence and position, with the total of 9 branches across the country. Each branch has significatly large area of approximately around 1,000 square metres with a considerably clean and comfortable environment with safe location.</p><p>Selling with a range of over thousands of products from birth to 10 years of age, surely makes us to be able to fulfill the baby and kid needs, and not forgetting the complete needs of mothers. We also try at best to provide both domestic and international brands, prioritizing on quality, comfort and safety for each brand.</p><p>Accompanied with courtesy, warmth and product knowledge by our dedicated employees, we are confident that each product can represent its attractiveness, uniqueness and features. At last, we always strive to be the best in the retail store industry for baby and kid, encompassing primarily on the products’ variety, quality, competitive price and the most convenience way to shop for our customers.</p>'),
+(10, 82, 2, '<h3>Corporate Growth Highlights & Facts</h3><p>Suzanna Baby Shop is a chained-retail baby store that sells goods for babies and kids. It operates mostly in the prime cities of Indonesia. Each and every branch of Suzanna Baby Shop has a quite large area of approximately around 1000 square metres or 10,763 square feet, with a considerably clean, comfortably environment with safe location.</p><p>The first and second stores openend in Surabaya in 1999 and 2001. Thereafter, we expanded our chain stores into the capital city of Indonesia, Jakarta. Our first store in Jakarta opened in 2003, followed with the second-third-and fourth stores opened in 2005, 2007 and 2008 respectively.</p><p>We are still confident that our expansion should be continued on another island, besides Java, which indeed its society has slightly differentiation in terms of taste and buying power. This is well said because we sell variety products that have high quality that can be reached by all social levels. Therefore we opened other 2 chain stores in Sumatera island, which are the city of Medan and Palembang.</p><p>Suzanna Baby Shops sell both domestic and international products, prioritizing on the good quality, product safety and competitive pricing. We sell not only goods, but we sell products with good service accompanied with courtesy, warmth and product knowledge. At last, we always strive to be the best in the retail store industry for babies and kids, encompassing primarily on the products variety, price and convenience in customers’ shopping.</p>'),
+(11, 84, 2, '<h3>It has been our culture of caring and loving that motivates all our actions, but our corporate focus is guided by its Vision and Mission which direct the business operational that we perform every day on behalf of our country and its residents.</h3>'),
+(12, 85, 2, '<ul>\r\n	<li>Keeping our minds open for creative discoveries and innovations, regarding to updated products and service methods to our customers</li>\r\n	<li>Trying the best to provide the complete and good quality products with excellent services and hospitality, in tidy and cozy shopping environment for our customers</li>\r\n	<li>Consistently creating a growth number of loyal customers, created by our overall store’s quality that makes our stores different and better compared to our competitors</li>\r\n</ul>'),
+(13, 86, 2, '<ul><li>Creating a clean, pleasantly tidy and cozy shopping environment for the customers</li><li>Trying the best to make customers coming back to our stores because of overall store’s quality that makes us different</li><li>Ensurinng updated availabilities, especially the latest trends on fashion and toys</li></ul>'),
+(14, 97, 2, 'Products'),
+(15, 98, 2, 'Exclusive Brands'),
+(16, 99, 2, '<h3>Suzanna Baby Shop’s exclusive brands are a reputable and well knowned products that appoints our company as a principal distributor and brand representative in Indonesia.</h3>'),
+(17, 100, 2, '<h3>Suzanna Baby Shop’s supporting brands are a qualified and favorite products we proud to offer to our customers.</h3>'),
+(18, 102, 2, 'Partnership'),
+(19, 103, 2, 'Partnership'),
+(20, 104, 2, '<h3>Indonesia is one of the most populated country in the world. As long as the population grow, we’ll keep on growing in paralel.</h3><p>As our growth continues unstoppable, we are seeking to align with partners that want to seize the opportunity together. We’re open for a straightforward discussion regarding any possibility of partnerships.\r\n</p><h5>How Can Suzanna Baby Shop Bring Value To You:</h5>'),
+(21, 105, 2, 'For Brand Principals'),
+(22, 106, 2, '<ul><li>Suzanna baby shop has roots everywhere and the as an icon of trust, the brand has embedded in the hearts of modern society at strategic locations in Indonesia.</li><li>Suzanna has very adequate human resources and infrastructure to develop a non stop and consistent growing business.</li><li>Suzanna Baby Shop has a very strong segmentation at the middle and upper segmentation, this is evidenced from the trust given by some international brands that have entrusted their sales in Indonesia to Suzanna Baby Shop for decades.</li></ul>'),
+(23, 107, 2, 'For Agents / Distributors'),
+(24, 108, 2, '<ul><li>Our name and brand has become an icon of trust to the public since 1999 - we have a proud reputation on sales and service.</li><li>Suzanna Baby Shop has been trusted for years by various international products to be the sole holder of their brand in Indonesia.</li><li>Thanks to the high quality product collections from various international qualified brand, we almost never get complaints on the products we sell.</li><li>The large quantity demands from regions outside Java proves that the opportunity for penetration outside Java is very promising.</li></ul>'),
+(25, 111, 2, 'Store Location'),
+(26, 112, 2, 'Store Location'),
+(27, 113, 2, '<h3>Please feel free to find and contact the nearest Suzanna Baby Shop to your location</h3>'),
+(28, 115, 2, 'Contact Us'),
+(29, 116, 2, 'Contact Us'),
+(30, 117, 2, '<h4>Need help regarding our baby shop products? You can ask us anything...</h4>'),
+(31, 118, 2, 'Jl. Hr. Muhammad No. 59, Surabaya 60189, Indonesia'),
+(32, 119, 2, 'For any other inquiries, you can drop us a message below and we’ll respond to you shortly.'),
+(33, 125, 2, 'Get In Touch With Suzanna Babyshop'),
+(34, 126, 2, 'Our resourceful team will get in touch with you, please leave your contact detail below.');
 
 -- --------------------------------------------------------
 
@@ -2956,9 +3035,7 @@ CREATE TABLE `sl_slide` (
 --
 
 INSERT INTO `sl_slide` (`id`, `topik_id`, `image`, `url`, `active`, `date_input`, `date_update`, `insert_by`, `last_update_by`, `writer`, `sort`) VALUES
-(14, 0, '16afc-DESIGN.jpg', NULL, 1, '0000-00-00 00:00:00', '2019-07-31 09:47:35', 'deoryzpandu@gmail.com', 'info@markdesign.net', '', 1),
-(20, 0, 'fd014-6a987-16b7e-design2_07.jpg', NULL, 2, '0000-00-00 00:00:00', '2018-10-18 14:59:25', 'info@markdesign.net', 'info@markdesign.net', '', 2),
-(21, 0, '4030f-6a987-16b7e-design2_07.jpg', NULL, 2, '0000-00-00 00:00:00', '2018-10-18 14:59:33', 'info@markdesign.net', 'info@markdesign.net', '', 3);
+(1, 0, '2d8d9-slider_03.jpg', NULL, 1, '2019-08-20 10:48:43', '2019-08-20 10:48:43', 'info@markdesign.net', 'info@markdesign.net', '', 1);
 
 -- --------------------------------------------------------
 
@@ -2983,24 +3060,7 @@ CREATE TABLE `sl_slide_description` (
 --
 
 INSERT INTO `sl_slide_description` (`id`, `slide_id`, `language_id`, `title`, `subtitle`, `content`, `periode`, `url_teks`, `url`) VALUES
-(20, 4, 2, 'understand', '', '<p>\r\n	understand\r\n</p>', '', '', ''),
-(21, 5, 2, 'chinese new year', '', '<p>\r\n	chinese new year\r\n</p>', '', '', ''),
-(28, 6, 2, 'Title 1', '', '', '', '', ''),
-(42, 7, 2, 'Years of uncompromised style.', '', 'From the start, our mission has been to create our Indonesian people proudness of local products,\r\nLinette bags line build consciousnes and love to our customer through exceptional designs that competes\r\nin the international market of fashion.', '', '', '#'),
-(25, 8, 2, 'test', '', '', '', '', ''),
-(27, 9, 2, 'test', '', '', '', '', ''),
-(32, 10, 2, 'title 1', '', '', '', '', ''),
-(33, 11, 2, 'title 3', '', '', '', '', ''),
-(34, 12, 2, 'title 3', '', '', '', '', ''),
-(37, 13, 2, 'Road to 2016', '', '', '', '', ''),
-(72, 16, 2, 'Harga Turun Lagi', 'Yuk yang hobby fotografi, segera ikuti lomba foto street style dengan objek utama sepatu sneaker Pre', '<p>\r\n	 Hanya berlaku untuk pembelanjaan dengan nominal di atas Rp 1.000.000 (satu juta rupiah), dan tidak berlaku untuk produk dengan harga discount / potongan.\r\n</p>\r\n<p>\r\n	 Barang yang dibeli tidak dapat dikembalikan\r\n</p>\r\n<p>\r\n	 Valid untuk segala macam metode pembayaran\r\n</p>', '15 Juni - 9 July 2017', '', ''),
-(77, 17, 2, 'your Colour, your Style', 'semakin banyak pilihan variasi warna , semakin melengkapi gayamu', '', '', '', ''),
-(79, 15, 2, 'Harga Naik Lagi', 'Yuk yang hobby fotografi, segera ikuti lomba foto street style dengan objek utama sepatu sneaker Pre', '<p>\r\n	     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vitae enim commodi nesciunt recusandae facilis perspiciatis dolorem a fugiat, alias reiciendis perferendis cumque distinctio vel, mollitia earum pariatur et, eum odit ab culpa harum itaque adipisci? Dolorem labore facilis, perspiciatis?\r\n</p>\r\n<p>\r\n	     Harum omnis, quod voluptates? Excepturi, nulla architecto esse natus magni sequi quibusdam modi ut, quia dolorum nesciunt unde deleniti ratione iure vel fuga cumque rem molestiae soluta ducimus odio eum voluptatum iusto! Nam eligendi, doloremque amet ipsam obcaecati, reiciendis asperiores.\r\n</p>\r\n<p>\r\n	     Rerum qui ratione dolorem nemo perferendis ut, necessitatibus similique fugiat voluptates debitis vel, numquam nisi beatae corporis dolor iusto? Voluptates doloremque quasi, at sapiente voluptatibus id ut neque ipsa, voluptatum quisquam quo dicta aperiam repellendus quam inventore adipisci molestiae deleniti.\r\n</p>\r\n<p>\r\n	     Molestiae, dolorem non officiis tempore ratione at? Officia inventore possimus dolores suscipit dicta obcaecati a architecto, iure, vel autem quia dolor praesentium nostrum perferendis enim ducimus fugiat omnis. Dolor maxime, aperiam quo reiciendis omnis eligendi quod maiores dolorum nostrum quibusdam.\r\n</p>\r\n<p>\r\n	     Libero quae maxime recusandae aspernatur ratione laborum laudantium iusto nam quaerat id laboriosam voluptatum vero perspiciatis repudiandae dolorum itaque doloremque officia reprehenderit quis impedit, assumenda harum corporis non! Quasi dolor quas vero dolore in odit atque libero enim tenetur commodi.\r\n</p>', '15 Septermber - 20 Semptember 2017', '', ''),
-(70, 18, 2, 'Harga Turun Lagi', 'Yuk yang hobby fotografi, segera ikuti lomba foto street style dengan objek utama sepatu sneaker Pre', '<p>\r\n	 Hanya berlaku untuk pembelanjaan dengan nominal di atas Rp 1.000.000 (satu juta rupiah), dan tidak berlaku untuk produk dengan harga discount / potongan.\r\n</p>\r\n<p>\r\n	 Barang yang dibeli tidak dapat dikembalikan\r\n</p>\r\n<p>\r\n	 Valid untuk segala macam metode pembayaran\r\n</p>', '15 Juni - 9 July 2017', '', ''),
-(69, 19, 2, 'Harga Turun Lagi', 'Yuk yang hobby fotografi, segera ikuti lomba foto street style dengan objek utama sepatu sneaker Pre', '<p>\r\n	 Hanya berlaku untuk pembelanjaan dengan nominal di atas Rp 1.000.000 (satu juta rupiah), dan tidak berlaku untuk produk dengan harga discount / potongan.\r\n</p>\r\n<p>\r\n	 Barang yang dibeli tidak dapat dikembalikan\r\n</p>\r\n<p>\r\n	 Valid untuk segala macam metode pembayaran\r\n</p>', '15 Juni - 9 July 2017', '', ''),
-(95, 20, 2, 'The world under your feet', 'Jackson Brand brings footwear that sets the modern type.', '', '', '', 'https://markdesign.net/jackson/.dev/product/index'),
-(96, 21, 2, 'The world under your feet', 'Jackson Brand brings footwear that sets the modern type.', '', '', '', 'http://markdesign.net/jackson/.dev/product/index'),
-(97, 14, 2, 'The world under your feet', 'Jackson Brand brings footwear that sets the modern type.', '', '', '', 'http://markdesign.net/jackson/.dev/product/index');
+(1, 1, 2, 'Our Exclusive Brand:', 'The RoyalBaby bicycle products features a series of unique design bikes with the advantage of very l', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -3261,110 +3321,11 @@ INSERT INTO `tt_text` (`id`, `category`, `message`) VALUES
 -- --------------------------------------------------------
 
 --
--- Stand-in struktur untuk tampilan `view_blog`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_blog` (
-`id` int(11)
-,`topik_id` int(11)
-,`image` varchar(255)
-,`active` int(11)
-,`date_input` datetime
-,`date_update` datetime
-,`insert_by` varchar(255)
-,`last_update_by` varchar(255)
-,`writer` int(25)
-,`id2` int(11)
-,`blog_id` int(11)
-,`language_id` int(11)
-,`title` varchar(255)
-,`content` text
-,`quote` text
-);
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_category`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_category` (
-`id` int(11)
-,`parent_id` int(11)
-,`sort` int(11)
-,`image` varchar(200)
-,`type` varchar(100)
-,`data` text
-,`id2` int(11)
-,`category_id` int(11)
-,`language_id` int(11)
-,`name` varchar(100)
-,`data2` text
-);
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_gallery`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_gallery` (
-`id` int(11)
-,`topik_id` int(11)
-,`image` varchar(255)
-,`image2` varchar(200)
-,`active` int(11)
-,`date_input` datetime
-,`date_update` datetime
-,`insert_by` varchar(255)
-,`last_update_by` varchar(255)
-,`writer` varchar(200)
-,`city` varchar(100)
-,`harga` int(11)
-,`color` varchar(100)
-,`orientation` int(11)
-,`id2` int(11)
-,`gallery_id` int(11)
-,`language_id` int(11)
-,`title` varchar(255)
-,`sub_title` text
-,`sub_title_2` text
-,`content` text
-);
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_slide`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_slide` (
-`id` int(11)
-,`topik_id` int(11)
-,`image` varchar(255)
-,`active` int(11)
-,`date_input` datetime
-,`date_update` datetime
-,`insert_by` varchar(255)
-,`last_update_by` varchar(255)
-,`writer` varchar(200)
-,`id2` int(11)
-,`slide_id` int(11)
-,`language_id` int(11)
-,`title` varchar(255)
-,`content` text
-,`url` varchar(200)
-,`sort` int(11)
-);
-
--- --------------------------------------------------------
-
---
 -- Struktur untuk view `view_blog`
 --
 DROP TABLE IF EXISTS `view_blog`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_blog`  AS  select `pg_blog`.`id` AS `id`,`pg_blog`.`topik_id` AS `topik_id`,`pg_blog`.`image` AS `image`,`pg_blog`.`active` AS `active`,`pg_blog`.`date_input` AS `date_input`,`pg_blog`.`date_update` AS `date_update`,`pg_blog`.`insert_by` AS `insert_by`,`pg_blog`.`last_update_by` AS `last_update_by`,`pg_blog`.`writer` AS `writer`,`pg_blog_description`.`id` AS `id2`,`pg_blog_description`.`blog_id` AS `blog_id`,`pg_blog_description`.`language_id` AS `language_id`,`pg_blog_description`.`title` AS `title`,`pg_blog_description`.`content` AS `content`,`pg_blog_description`.`quote` AS `quote` from (`pg_blog` join `pg_blog_description` on((`pg_blog`.`id` = `pg_blog_description`.`blog_id`))) ;
+CREATE VIEW `view_blog`  AS  select `pg_blog`.`id` AS `id`,`pg_blog`.`topik_id` AS `topik_id`,`pg_blog`.`image` AS `image`,`pg_blog`.`active` AS `active`,`pg_blog`.`date_input` AS `date_input`,`pg_blog`.`date_update` AS `date_update`,`pg_blog`.`insert_by` AS `insert_by`,`pg_blog`.`last_update_by` AS `last_update_by`,`pg_blog`.`writer` AS `writer`,`pg_blog_description`.`id` AS `id2`,`pg_blog_description`.`blog_id` AS `blog_id`,`pg_blog_description`.`language_id` AS `language_id`,`pg_blog_description`.`title` AS `title`,`pg_blog_description`.`content` AS `content`,`pg_blog_description`.`quote` AS `quote` from (`pg_blog` join `pg_blog_description` on((`pg_blog`.`id` = `pg_blog_description`.`blog_id`))) ;
 
 -- --------------------------------------------------------
 
@@ -3373,7 +3334,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `view_category`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_category`  AS  select `prd_category`.`id` AS `id`,`prd_category`.`parent_id` AS `parent_id`,`prd_category`.`sort` AS `sort`,`prd_category`.`image` AS `image`,`prd_category`.`type` AS `type`,`prd_category`.`data` AS `data`,`prd_category_description`.`id` AS `id2`,`prd_category_description`.`category_id` AS `category_id`,`prd_category_description`.`language_id` AS `language_id`,`prd_category_description`.`name` AS `name`,`prd_category_description`.`data` AS `data2` from (`prd_category` join `prd_category_description` on((`prd_category`.`id` = `prd_category_description`.`category_id`))) ;
+CREATE VIEW `view_category`  AS  select `prd_category`.`id` AS `id`,`prd_category`.`parent_id` AS `parent_id`,`prd_category`.`sort` AS `sort`,`prd_category`.`image` AS `image`,`prd_category`.`type` AS `type`,`prd_category`.`data` AS `data`,`prd_category_description`.`id` AS `id2`,`prd_category_description`.`category_id` AS `category_id`,`prd_category_description`.`language_id` AS `language_id`,`prd_category_description`.`name` AS `name`,`prd_category_description`.`data` AS `data2` from (`prd_category` join `prd_category_description` on((`prd_category`.`id` = `prd_category_description`.`category_id`))) ;
 
 -- --------------------------------------------------------
 
@@ -3382,7 +3343,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `view_gallery`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_gallery`  AS  select `gal_gallery`.`id` AS `id`,`gal_gallery`.`topik_id` AS `topik_id`,`gal_gallery`.`image` AS `image`,`gal_gallery`.`image2` AS `image2`,`gal_gallery`.`active` AS `active`,`gal_gallery`.`date_input` AS `date_input`,`gal_gallery`.`date_update` AS `date_update`,`gal_gallery`.`insert_by` AS `insert_by`,`gal_gallery`.`last_update_by` AS `last_update_by`,`gal_gallery`.`writer` AS `writer`,`gal_gallery`.`city` AS `city`,`gal_gallery`.`harga` AS `harga`,`gal_gallery`.`color` AS `color`,`gal_gallery`.`orientation` AS `orientation`,`gal_gallery_description`.`id` AS `id2`,`gal_gallery_description`.`gallery_id` AS `gallery_id`,`gal_gallery_description`.`language_id` AS `language_id`,`gal_gallery_description`.`title` AS `title`,`gal_gallery_description`.`sub_title` AS `sub_title`,`gal_gallery_description`.`sub_title_2` AS `sub_title_2`,`gal_gallery_description`.`content` AS `content` from (`gal_gallery` join `gal_gallery_description` on((`gal_gallery`.`id` = `gal_gallery_description`.`gallery_id`))) ;
+CREATE VIEW `view_gallery`  AS  select `gal_gallery`.`id` AS `id`,`gal_gallery`.`topik_id` AS `topik_id`,`gal_gallery`.`image` AS `image`,`gal_gallery`.`image2` AS `image2`,`gal_gallery`.`active` AS `active`,`gal_gallery`.`date_input` AS `date_input`,`gal_gallery`.`date_update` AS `date_update`,`gal_gallery`.`insert_by` AS `insert_by`,`gal_gallery`.`last_update_by` AS `last_update_by`,`gal_gallery`.`writer` AS `writer`,`gal_gallery`.`city` AS `city`,`gal_gallery`.`harga` AS `harga`,`gal_gallery`.`color` AS `color`,`gal_gallery`.`orientation` AS `orientation`,`gal_gallery_description`.`id` AS `id2`,`gal_gallery_description`.`gallery_id` AS `gallery_id`,`gal_gallery_description`.`language_id` AS `language_id`,`gal_gallery_description`.`title` AS `title`,`gal_gallery_description`.`sub_title` AS `sub_title`,`gal_gallery_description`.`sub_title_2` AS `sub_title_2`,`gal_gallery_description`.`content` AS `content` from (`gal_gallery` join `gal_gallery_description` on((`gal_gallery`.`id` = `gal_gallery_description`.`gallery_id`))) ;
 
 -- --------------------------------------------------------
 
@@ -3391,7 +3352,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `view_slide`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_slide`  AS  select `sl_slide`.`id` AS `id`,`sl_slide`.`topik_id` AS `topik_id`,`sl_slide`.`image` AS `image`,`sl_slide`.`active` AS `active`,`sl_slide`.`date_input` AS `date_input`,`sl_slide`.`date_update` AS `date_update`,`sl_slide`.`insert_by` AS `insert_by`,`sl_slide`.`last_update_by` AS `last_update_by`,`sl_slide`.`writer` AS `writer`,`sl_slide_description`.`id` AS `id2`,`sl_slide_description`.`slide_id` AS `slide_id`,`sl_slide_description`.`language_id` AS `language_id`,`sl_slide_description`.`title` AS `title`,`sl_slide_description`.`content` AS `content`,`sl_slide_description`.`url` AS `url`,`sl_slide`.`sort` AS `sort` from (`sl_slide` join `sl_slide_description` on((`sl_slide_description`.`slide_id` = `sl_slide`.`id`))) ;
+CREATE VIEW `view_slide`  AS  select `sl_slide`.`id` AS `id`,`sl_slide`.`topik_id` AS `topik_id`,`sl_slide`.`image` AS `image`,`sl_slide`.`active` AS `active`,`sl_slide`.`date_input` AS `date_input`,`sl_slide`.`date_update` AS `date_update`,`sl_slide`.`insert_by` AS `insert_by`,`sl_slide`.`last_update_by` AS `last_update_by`,`sl_slide`.`writer` AS `writer`,`sl_slide_description`.`id` AS `id2`,`sl_slide_description`.`slide_id` AS `slide_id`,`sl_slide_description`.`language_id` AS `language_id`,`sl_slide_description`.`title` AS `title`,`sl_slide_description`.`content` AS `content`,`sl_slide_description`.`url` AS `url`,`sl_slide`.`sort` AS `sort` from (`sl_slide` join `sl_slide_description` on((`sl_slide_description`.`slide_id` = `sl_slide`.`id`))) ;
 
 --
 -- Indexes for dumped tables
@@ -3785,7 +3746,7 @@ ALTER TABLE `about_image`
 -- AUTO_INCREMENT untuk tabel `address`
 --
 ALTER TABLE `address`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `banner`
@@ -3827,19 +3788,19 @@ ALTER TABLE `faq`
 -- AUTO_INCREMENT untuk tabel `gal_gallery`
 --
 ALTER TABLE `gal_gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `gal_gallery_description`
 --
 ALTER TABLE `gal_gallery_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `gal_gallery_image`
 --
 ALTER TABLE `gal_gallery_image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `home_product_spot`
@@ -3857,7 +3818,7 @@ ALTER TABLE `language`
 -- AUTO_INCREMENT untuk tabel `log`
 --
 ALTER TABLE `log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=326;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=379;
 
 --
 -- AUTO_INCREMENT untuk tabel `me_member`
@@ -3965,25 +3926,25 @@ ALTER TABLE `pg_type_letak`
 -- AUTO_INCREMENT untuk tabel `prd_brand`
 --
 ALTER TABLE `prd_brand`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_brand_description`
 --
 ALTER TABLE `prd_brand_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_category`
 --
 ALTER TABLE `prd_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_category_description`
 --
 ALTER TABLE `prd_category_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_category_product`
@@ -4061,7 +4022,7 @@ ALTER TABLE `setting`
 -- AUTO_INCREMENT untuk tabel `setting_description`
 --
 ALTER TABLE `setting_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT untuk tabel `shp_shipping_price`
@@ -4073,13 +4034,13 @@ ALTER TABLE `shp_shipping_price`
 -- AUTO_INCREMENT untuk tabel `sl_slide`
 --
 ALTER TABLE `sl_slide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `sl_slide_description`
 --
 ALTER TABLE `sl_slide_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_group`
