@@ -1,14 +1,20 @@
-<section class="cover-inside contact">
+<?php 
+$cover_page = '';
+
+if (isset($this->setting['partner_hero_image'])) {
+  $cover_page = Yii::app()->baseUrl.ImageHelper::thumb(1920,562, '/images/static/'. $this->setting['partner_hero_image'] , array('method' => 'adaptiveResize', 'quality' => '90'));
+}
+?>
+<section class="cover-inside contact" <?php if ($cover_page): ?>style="background-image: url(<?php echo $cover_page ?>);"<?php endif ?> >
 	<div class="prelative container">
 		<div class="row">
 			<div class="col-md-60">
 				<div class="content">
-					<!--					<div class="title">-->
-					<!--						<p>Contact Us</p>-->
-					<!--					</div>-->
+					<div class="title">
+                        <!-- <p><?php // echo $this->setting['partner_hero_title'] ?></p> -->
+                    </div>
 					<div class="subtitle">
-						<!--						<p>Our Background</p>						-->
-						<p>Partnership</p>
+						<p><?php echo $this->setting['partner_hero_subtitle'] ?></p>
 					</div>
 				</div>
 			</div>
@@ -21,44 +27,28 @@
 		<div class="row">
 			<div class="col-md-60">
 				<div class="boxed-inner">
-					<h3>Indonesia is one of the most populated country in the world. As long as the population grow, we’ll keep on growing in paralel.</h3>
-					<p>As our growth continues unstoppable, we are seeking to align with partners that want to seize the opportunity together. We’re open for a straightforward discussion regarding any possibility of partnerships.
-					</p>
-					<h5>How Can Suzanna Baby Shop Bring Value To You:</h5>
+					<?php echo $this->setting['partner_content'] ?>
+				</div>
+			</div>
+
+			<div class="col-md-30">
+				<div class="title">
+					<p><?php echo $this->setting['partner_principals_title'] ?></p>
+				</div>
+				<div class="content">
+					<?php echo $this->setting['partner_principals_content'] ?>
 				</div>
 			</div>
 			<div class="col-md-30">
 				<div class="title">
-					<p>For Brand Principals</p>
+					<p><?php echo $this->setting['partner_agents_title'] ?></p>
 				</div>
 				<div class="content">
-					<ul>
-						<li>Suzanna baby shop has roots everywhere and the as an icon of trust, the brand has embedded in the hearts of modern society at strategic locations in Indonesia.
-						</li>
-						<li>Suzanna has very adequate human resources and infrastructure to develop a non stop and consistent growing business. 		</li>
-						<li>Suzanna Baby Shop has a very strong segmentation at the middle and upper segmentation, this is evidenced from the trust given by some international brands that have entrusted their sales in Indonesia to Suzanna Baby Shop for decades. 							</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-30">
-				<div class="title">
-					<p>For Agents / Distributors</p>
-				</div>
-				<div class="content">
-					<ul>
-						<li>Our name and brand has become an icon of trust to the public since 1999 - we have a proud reputation on sales and service.
-						</li>
-						<li>Suzanna Baby Shop has been trusted for years by various international products to be the sole holder of their brand in Indonesia.
-						</li>
-						<li>Thanks to the high quality product collections from various international qualified brand, we almost never get complaints on the products we sell.
-						</li>
-						<li>The large quantity demands from regions outside Java proves that the opportunity for penetration outside Java is very promising.
-						</li>
-					</ul>
+					<?php echo $this->setting['partner_agents_content'] ?>
 				</div>
 			</div>
 			<div class="image">
-				<img src="<?php echo $this->assetBaseurl; ?>partnership.png" alt="">
+				<img class="img img-fluid" src="<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['partners2_picture_banners'] ?>" alt="">
 			</div>
 		</div>
 	</div>

@@ -54,7 +54,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Product</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/merk')); ?>">Partnership</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Store Location</a></li>
@@ -71,7 +71,7 @@
     <div class="row">
       <div class="col-md-15 col-sm-15">
         <div class="lgo_web_headrs_wb">
-          <a href="#">
+          <a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">
             <img src="<?php echo $this->assetBaseurl; ?>logo-footer.png" alt="" class="img img-fluid">
           </a>
         </div>
@@ -81,7 +81,7 @@
           <div class="menu-taffix">
             <ul class="list-inline d-inline">
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">About Us</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">About Us</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_exclusive')); ?>">Product</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/partnership')); ?>">Partnership</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/store_locator')); ?>">Store Location</a></li>

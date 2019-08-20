@@ -1,13 +1,20 @@
-<section class="cover-inside">
-	<div class="prelative container">
-		<div class="row">
-			<div class="col-md-60">
+<?php 
+$cover_page = '';
+
+if (isset($this->setting['product_hero_image'])) {
+  $cover_page = Yii::app()->baseUrl.ImageHelper::thumb(1920,562, '/images/static/'. $this->setting['product_hero_image'] , array('method' => 'adaptiveResize', 'quality' => '90'));
+}
+?>
+<section class="cover-inside" <?php if ($cover_page): ?>style="background-image: url(<?php echo $cover_page ?>);"<?php endif ?> >
+    <div class="prelative container">
+        <div class="row">
+            <div class="col-md-60">
 				<div class="content">
 					<div class="title">
-						<p>Products</p>
+						<p><?php echo $this->setting['product_hero_title'] ?></p>
 					</div>
 					<div class="subtitle">
-						<p>Exclusive Brands</p>
+						<p><?php echo $this->setting['product_hero_subtitle'] ?></p>
 					</div>
 				</div>
 			</div>
@@ -44,20 +51,39 @@
             <div class="col-md-60">
                 <div class="boxed">
                     <div class="inner">
-                        <h3>Suzanna Baby Shop’s supporting brands are a qualified and favorite products we proud to offer to our customers.</h3>
+                        <?php echo $this->setting['products_topbrand_ncontent'] ?>
                     </div>
                 </div>
             </div>
-            <?php for($i=0;$i<10;$i++){ ?>
             <div class="col-md-60">
-                <div class="image pt-2 mt-1 mx-auto"><img src="<?php echo $this->assetBaseurl; ?>Layer-361.png" alt=""></div>
+            	<?php 
+            	$criteria = new CDbCriteria;
+	            $criteria->with = array('description');
+	            $find_brands = Brand::model()->findAll($criteria);
+            	?>
+            	<div class="blocks_list_brands spage">
+            		<ul class="list-inline text-center justify-content-center m-0">
+            		<?php foreach ($find_brands as $key => $value): ?>
+                		<li class="list-inline-item pb-3">
+                			<img class="img img-fluid" src="<?php echo Yii::app()->baseUrl.'/images/brand/'. $value->image ?>" alt="">
+                		</li>
+            		<?php endforeach ?>
+            		</ul>
+            		<div class="clear"></div>
+            	</div>
             </div>
-            <?php } ?>
+            <div class="col-md-60">
+            	<div class="py-5"></div>
+            	<div class="py-5"></div>
+            	<div class="py-5"></div>
+            </div>
+
         </div>
     </div>
 </section>
 
 
-<section class="product-support-sec-2">
+<!-- <section class="product-support-sec-2">
 
 </section>
+ -->

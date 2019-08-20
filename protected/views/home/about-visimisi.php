@@ -1,13 +1,20 @@
-<section class="cover-inside">
+<?php 
+$cover_page = '';
+
+if (isset($this->setting['about_hero_image'])) {
+  $cover_page = Yii::app()->baseUrl.ImageHelper::thumb(1920,562, '/images/static/'. $this->setting['about_hero_image'] , array('method' => 'adaptiveResize', 'quality' => '90'));
+}
+?>
+<section class="cover-inside" <?php if ($cover_page): ?>style="background-image: url(<?php echo $cover_page ?>);"<?php endif ?> >
     <div class="prelative container">
         <div class="row">
             <div class="col-md-60">
                 <div class="content">
                     <div class="title">
-                        <p>About Us</p>
+                        <p><?php echo $this->setting['about_hero_title'] ?></p>
                     </div>
                     <div class="subtitle">
-                        <p>Vission & Mission</p>
+                        <p><?php echo $this->setting['about_hero_subtitle'] ?></p>
                     </div>
                 </div>
             </div>
@@ -45,8 +52,7 @@
                 <div class="col-md-60">
                     <div class="boxed-tittle-visimisi">
                         <div class="inner">
-                            <h3>It has been our culture of caring and loving that motivates all our actions, but our corporate focus is guided by its Vision and Mission which direct the business operational that we perform every day on behalf of our country and its residents.
-                        </h3>
+                            <?php echo $this->setting['about3_vision_content'] ?>
                         </div>
                     </div>
                 </div>
@@ -61,11 +67,7 @@
                     </div>
                 </div>
                 <div class="col-md-30">
-                    <ul>
-                        <li>Keeping our minds open for creative discoveries and innovations, regarding to updated products and service methods to our customers</li>
-                        <li>Trying the best to provide the complete and good quality products with excellent services and hospitality, in tidy and cozy shopping environment for our customers</li>
-                        <li>Consistently creating a growth number of loyal customers, created by our overall store’s quality that makes our stores different and better compared to our competitors</li>
-                    </ul>
+                    <?php echo $this->setting['about3_visi'] ?>
                 </div>
                 <div class="col-md-30">
                     <div class="row">
@@ -78,18 +80,14 @@
                     </div>
                 </div>
                 <div class="col-md-30">
-                <ul>
-                        <li>Creating a clean, pleasantly tidy and cozy shopping environment for the customers</li>
-                        <li>Trying the best to make customers coming back to our stores because of overall store’s quality that makes us different</li>
-                        <li>Ensurinng updated availabilities, especially the latest trends on fashion and toys</li>
-                    </ul>
+                <?php echo $this->setting['about3_misi'] ?>
                 </div>
-</div>
+            </div>
 
             <div class="row">
                 <div class="col-md-60">
                     <div class="img">
-                        <img class="w-100"src="<?php echo $this->assetBaseurl; ?>vission.png" alt="">
+                        <img class="w-100"src="<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['about3_pictures_banner_middle'] ?>" alt="">
                     </div>
                 </div>
             </div>

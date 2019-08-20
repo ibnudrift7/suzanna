@@ -84,17 +84,20 @@ $loc_smt = [
 ?>
 
 
-<section class="cover-inside contact">
+<?php 
+$cover_page = '';
+
+if (isset($this->setting['store_hero_image'])) {
+  $cover_page = Yii::app()->baseUrl.ImageHelper::thumb(1920,562, '/images/static/'. $this->setting['store_hero_image'] , array('method' => 'adaptiveResize', 'quality' => '90'));
+}
+?>
+<section class="cover-inside" <?php if ($cover_page): ?>style="background-image: url(<?php echo $cover_page ?>);"<?php endif ?> >
 	<div class="prelative container">
 		<div class="row">
 			<div class="col-md-60">
 				<div class="content">
-					<!--					<div class="title">-->
-					<!--						<p>Contact Us</p>-->
-					<!--					</div>-->
 					<div class="subtitle">
-						<!--						<p>Our Background</p>						-->
-						<p>Store Location</p>
+						<p><?php echo $this->setting['store_hero_subtitle'] ?></p>
 					</div>
 				</div>
 			</div>
@@ -107,98 +110,54 @@ $loc_smt = [
 		<div class="row">
 			<div class="col-md-60">
 				<div class="title">
-					<h3>Please feel free to find and contact the nearest Suzanna Baby Shop to your location</h3>
+					<?php echo $this->setting['store_content'] ?>
 				</div>
 			</div>
 		</div>
+		<?php 
+		// Get all address
+		$criteria = new CDbCriteria;
+		$criteria->group = 't.kota';
+		$criteria->order = 't.id ASC';
+		$address_all = Address::model()->findAll($criteria);
+		?>
+		<?php foreach ($address_all as $key => $value): ?>
 		<div class="boxed-locator">
 			<div class="title">
-				<h4>Surabaya</h4>
+				<h4><?php echo ucwords($value->kota) ?></h4>
 			</div>
-			<div class="row">
-				<?php foreach($loc_sby as $key => $value): ?>
+			<div class="row justify-content-center">
+				<?php 
+				$criteria = new CDbCriteria;
+				$criteria->addCondition('t.kota = :kota');
+				$criteria->params[':kota'] = $value->kota;
+				$criteria->order = 't.id ASC';
+				$childs_address = Address::model()->findAll($criteria);
+				?>
+				<?php foreach($childs_address as $key2 => $value2): ?>
 				<div class="col-md-15">
 					<div class="boxed-inner">
 						<div class="name_store">
-							<p><?php echo $value['name_store'] ?></p>
+							<p><?php echo $value2->nama ?></p>
 						</div>
 						<div class="alamat">
-							<p><?php echo $value['alamat'] ?></p>
+							<p><?php echo $value2->address_1 ?> 
+							<?php if ($value2->address_2): ?>
+							<br>
+							<?php echo $value2->address_2; ?>
+							<?php endif ?>
+							</p>
 						</div>
 						<div class="phone">
-							<p><?php echo $value['phone'] ?></p>
+							<p><?php echo $value2->telp ?></p>
 						</div>
 					</div>
 				</div>
 				<?php endforeach ?>
 			</div>
 		</div>
-		<div class="boxed-locator">
-			<div class="title">
-				<h4>Jakarta</h4>
-			</div>
-			<div class="row">
-				<?php foreach($loc_jkt as $key => $value): ?>
-					<div class="col-md-15">
-						<div class="boxed-inner">
-							<div class="name_store">
-								<p><?php echo $value['name_store'] ?></p>
-							</div>
-							<div class="alamat">
-								<p><?php echo $value['alamat'] ?></p>
-							</div>
-							<div class="phone">
-								<p><?php echo $value['phone'] ?></p>
-							</div>
-						</div>
-					</div>
-				<?php endforeach ?>
-			</div>
-		</div>
-		<div class="boxed-locator">
-			<div class="title">
-				<h4>Bandung</h4>
-			</div>
-			<div class="row">
-				<?php foreach($loc_bdg as $key => $value): ?>
-					<div class="col-md-60">
-						<div class="boxed-inner">
-							<div class="name_store">
-								<p><?php echo $value['name_store'] ?></p>
-							</div>
-							<div class="alamat">
-								<p><?php echo $value['alamat'] ?></p>
-							</div>
-							<div class="phone">
-								<p><?php echo $value['phone'] ?></p>
-							</div>
-						</div>
-					</div>
-				<?php endforeach ?>
-			</div>
-		</div>
-		<div class="boxed-locator">
-			<div class="title">
-				<h4>Sumatra</h4>
-			</div>
-			<div class="row">
-				<?php foreach($loc_smt as $key => $value): ?>
-					<div class="col-md-15">
-						<div class="boxed-inner">
-							<div class="name_store">
-								<p><?php echo $value['name_store'] ?></p>
-							</div>
-							<div class="alamat">
-								<p><?php echo $value['alamat'] ?></p>
-							</div>
-							<div class="phone">
-								<p><?php echo $value['phone'] ?></p>
-							</div>
-						</div>
-					</div>
-				<?php endforeach ?>
-			</div>
-		</div>
+		<?php endforeach ?>
+		
 	</div>
 </section>
 

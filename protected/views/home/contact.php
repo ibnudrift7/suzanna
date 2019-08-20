@@ -1,4 +1,11 @@
-<section class="cover-inside contact">
+<?php 
+$cover_page = '';
+
+if (isset($this->setting['contact_hero_image'])) {
+  $cover_page = Yii::app()->baseUrl.ImageHelper::thumb(1920,562, '/images/static/'. $this->setting['contact_hero_image'] , array('method' => 'adaptiveResize', 'quality' => '90'));
+}
+?>
+<section class="cover-inside contact" <?php if ($cover_page): ?>style="background-image: url(<?php echo $cover_page ?>);"<?php endif ?> >
 	<div class="prelative container">
 		<div class="row">
 			<div class="col-md-60">
@@ -8,7 +15,7 @@
 <!--					</div>-->
 					<div class="subtitle">
 <!--						<p>Our Background</p>						-->
-						<p>Contact Us</p>
+					<?php echo $this->setting['contact_hero_subtitle'] ?>
 					</div>
 				</div>
 			</div>
@@ -21,27 +28,27 @@
 		<div class="row">
 			<div class="col-md-60">
 				<div class="title">
-					<h4>Need help regarding our baby shop products? You can ask us anything...</h4>
+					<?php echo $this->setting['contact_content'] ?>
 				</div>
 				<div class="shop-hotline">
 					<h5>Suzanna Baby Shop Hotline</h5>
 					<div class="isi">
 						<div class="row">
 							<div class="col-md-30">
-								<p>081 650 3636 (Click to chat)</p>
+								<p><a href="https://wa.me/<?php echo str_replace(' ', '', $this->setting['contact_phone']) ?>"><?php echo $this->setting['contact_phone'] ?> (Click to chat)</a></p>
 							</div>
 							<div class="col-md-30">
-								<p>info@suzannababyshop</p>
+								<p><a href="mailto:<?php echo $this->setting['contact_email'] ?>"><?php echo $this->setting['contact_email'] ?></a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="shop-hotline">
 					<h5>Suzanna Baby Shop Head Office</h5>
-					<h6>Jl. Hr. Muhammad No. 59, Surabaya 60189, Indonesia</h6>
+					<h6><?php echo $this->setting['contact_address'] ?></h6>
 				</div>
 				<div class="for-any">
-					<p>For any other inquiries, you can drop us a message below and we’ll respond to you shortly.</p>
+					<p><?php echo $this->setting['contact_topcontacts'] ?></p>
 				</div>
 			</div>
 		</div>
@@ -54,10 +61,10 @@
 		<div class="row">
 			<div class="col-md-60">
 				<div class="subtitle">
-					<h3>Get In Touch With Suzanna Babyshop</h3>
+					<h3><?php echo $this->setting['contact_top_form_titles'] ?></h3>
 				</div>
 				<div class="caption">
-					<p>Our resourceful team will get in touch with you, please leave your contact detail below.</p>
+					<p><?php echo $this->setting['contact_top_form_subtitles'] ?></p>
 				</div>
 			</div>
 			<form>
