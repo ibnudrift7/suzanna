@@ -12,8 +12,8 @@
               <div class="col-md-40">
                   <div class="tops_head_info pb-2 text-right">
                       <p>
-                      Whatsapp &nbsp;&nbsp;<i class="fa fa-whatsapp"></i> 081 650 3636 &nbsp;&nbsp;&nbsp;
-                      Email <i class="fa fa-envelope-o"></i> <a href="mailto:info@suzannababyshop.com">info@suzannababyshop.com</a>
+                      Whatsapp &nbsp;&nbsp;<i class="fa fa-whatsapp"></i> <a href="https://wa.me/<?php echo str_replace(' ', '', $this->setting['contact_wa']) ?>"><?php echo $this->setting['contact_wa'] ?></a> &nbsp;&nbsp;&nbsp;
+                      Email <i class="fa fa-envelope-o"></i> <a href="mailto:<?php echo $this->setting['contact_email'] ?>"><?php echo $this->setting['contact_email'] ?></a>
                       </p>
                   </div>
 

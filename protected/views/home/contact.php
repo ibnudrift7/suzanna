@@ -35,7 +35,7 @@ if (isset($this->setting['contact_hero_image'])) {
 					<div class="isi">
 						<div class="row">
 							<div class="col-md-30">
-								<p><a href="https://wa.me/<?php echo str_replace(' ', '', $this->setting['contact_phone']) ?>"><?php echo $this->setting['contact_phone'] ?> (Click to chat)</a></p>
+								<p><a href="https://wa.me/<?php echo str_replace(' ', '', $this->setting['contact_wa']) ?>"><?php echo $this->setting['contact_wa'] ?> (Click to chat)</a></p>
 							</div>
 							<div class="col-md-30">
 								<p><a href="mailto:<?php echo $this->setting['contact_email'] ?>"><?php echo $this->setting['contact_email'] ?></a></p>
